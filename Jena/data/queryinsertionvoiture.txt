@@ -1,0 +1,14 @@
+PREFIX ns: <http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+INSERT DATA {
+  ns:voiture3 a ns:VoiturePersonnelle ;
+              ns:Id 3 ;
+              ns:Marque "Ford" ;
+              ns:Modele "Focus" ;
+              ns:Annee 2021 ;
+              ns:Couleur "Noir" ;
+              ns:Statut "Disponible" .
+}
+
+

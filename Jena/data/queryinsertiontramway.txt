@@ -1,0 +1,12 @@
+PREFIX ns: <http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+INSERT DATA {
+  ns:tramway3 a ns:Tramway ;
+              ns:Id 3 ;
+              ns:NomTramway "Tramway Ligne C" ;
+              ns:CapacitéMax 350 ;
+              ns:HorairesOuverture "05:00 - 00:30" .
+}
+
+

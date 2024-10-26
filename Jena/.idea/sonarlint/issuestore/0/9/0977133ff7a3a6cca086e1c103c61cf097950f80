@@ -1,0 +1,12 @@
+
+“	java:S117
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õÅ‡Î8ïÜ‡Í¬2J$8fbc6933-9c06-4e83-b28c-7dec94de6ec1
+x
+java:S1854"6Remove this useless assignment to local variable "NS".(º½Ì)8ûÜ‡Í¬2J$95822ff0-9bd1-4d89-bcc8-f797569e8c0c
+j
+java:S1481
+"'Remove this unused "NS" local variable.(õÅ‡Î8ıÜ‡Í¬2J$c25e042f-5197-4dbd-b4cc-c849644659e4
+r	java:S106"+Replace this use of System.out by a logger.(ô¾úÿÿÿÿ8ƒİ‡Í¬2J$d3f9c8dd-99ca-451d-9a06-98dfdfe5a711
+r	java:S106"+Replace this use of System.out by a logger.(ÉÁ›‰ûÿÿÿÿ8†İ‡Í¬2J$10f786b2-96d3-4e77-8e87-c26428f9d268
+m	java:S106&"+Replace this use of System.out by a logger.(–ÿï³8ˆİ‡Í¬2J$38eef3b9-2bda-434f-9443-375090dd0a59
+r	java:S106)"+Replace this use of System.out by a logger.(¶´Ëæÿÿÿÿÿ8ˆ“‹Í¬2J$c76bd039-50d7-4725-9c6c-d1533b2ae3ab

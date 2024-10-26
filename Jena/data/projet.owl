@@ -1,0 +1,1561 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-24 "http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-24="http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <Ontology rdf:about="http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#Addresse -->
+
+    <AnnotationProperty rdf:about="&untitled-ontology-24;Addresse"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#Couleur -->
+
+    <AnnotationProperty rdf:about="&untitled-ontology-24;Couleur"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#DateEmission -->
+
+    <AnnotationProperty rdf:about="&untitled-ontology-24;DateEmission"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#DateImplementation -->
+
+    <AnnotationProperty rdf:about="&untitled-ontology-24;DateImplementation"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#Description -->
+
+    <AnnotationProperty rdf:about="&untitled-ontology-24;Description"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#MontantEconomise -->
+
+    <AnnotationProperty rdf:about="&untitled-ontology-24;MontantEconomise"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#NomMetro -->
+
+    <AnnotationProperty rdf:about="&untitled-ontology-24;NomMetro"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#NomVelo -->
+
+    <AnnotationProperty rdf:about="&untitled-ontology-24;NomVelo"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#NumberDeTéléphone -->
+
+    <AnnotationProperty rdf:about="&untitled-ontology-24;NumberDeTéléphone"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#QuantiteEmise -->
+
+    <AnnotationProperty rdf:about="&untitled-ontology-24;QuantiteEmise"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#Source -->
+
+    <AnnotationProperty rdf:about="&untitled-ontology-24;Source"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#aCovoitureur -->
+
+    <AnnotationProperty rdf:about="&untitled-ontology-24;aCovoitureur"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#aStationArrivee -->
+
+    <AnnotationProperty rdf:about="&untitled-ontology-24;aStationArrivee"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#aStationDepart -->
+
+    <AnnotationProperty rdf:about="&untitled-ontology-24;aStationDepart"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#aUtilisateur -->
+
+    <AnnotationProperty rdf:about="&untitled-ontology-24;aUtilisateur"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#composeDe -->
+
+    <AnnotationProperty rdf:about="&untitled-ontology-24;composeDe"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="&xsd;date"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#aCovoitureur -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;aCovoitureur"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#aEconomiesDEnergie -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;aEconomiesDEnergie"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#aEmissionsCO2 -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;aEmissionsCO2"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#aImpactEcologique -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;aImpactEcologique"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#aModeTransport -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;aModeTransport"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#aMoyenDeTransport -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;aMoyenDeTransport"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#aPreferenceTransport -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;aPreferenceTransport"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#aProprietaire -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;aProprietaire"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#aRapportImpact -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;aRapportImpact"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#aReductionDePollution -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;aReductionDePollution"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#aStationArrivee -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;aStationArrivee"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#aStationDepart -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;aStationDepart"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#aStationTransport -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;aStationTransport"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#aTrajet -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;aTrajet"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#aTrajetInterurbain -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;aTrajetInterurbain"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#aTrajetLongueDistance -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;aTrajetLongueDistance"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#aTrajetPartage -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;aTrajetPartage"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#aTrajetUrbain -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;aTrajetUrbain"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#aUtilisateur -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;aUtilisateur"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#composeDe -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;composeDe"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#creePar -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;creePar"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#estUnAdmin -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;estUnAdmin"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#estUnClient -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;estUnClient"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#estUnCovoitureur -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;estUnCovoitureur"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#pourUnClient -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-24;pourUnClient"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#AccessibilitéPMR -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;AccessibilitéPMR"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#Adresse -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;Adresse"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#AdresseStation -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;AdresseStation"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#CapacitéMax -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;CapacitéMax"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#CapacitéStation -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;CapacitéStation"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#ConsommationÉnergétique -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;ConsommationÉnergétique"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#DateDeNaissance -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;DateDeNaissance"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#DateMesure -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;DateMesure">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#DescriptionImpact -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;DescriptionImpact"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#Disponibilité -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;Disponibilité"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#DistanceEnKm -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;DistanceEnKm"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#DuréeEstimee -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;DuréeEstimee"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#HeureD&apos;Arrivée -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;HeureD&apos;Arrivée"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#HeureDeDépart -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;HeureDeDépart">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#HorairesDeFermeture -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;HorairesDeFermeture"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#HorairesOuverture -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;HorairesOuverture"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#Id -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;Id"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#MotDePasse -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;MotDePasse"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#NomMoyenTransport -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;NomMoyenTransport"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#NomStation -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;NomStation"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#NuméroDeTéléphone -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;NuméroDeTéléphone"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#PointD&apos;Arrivée -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;PointD&apos;Arrivée"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#PointDeDépart -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;PointDeDépart"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#PrixEstime -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;PrixEstime"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#TypeDeCarburant -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;TypeDeCarburant"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#TypeImpact -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;TypeImpact"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#ValeurImpact -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;ValeurImpact"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#VitesseMoyenne -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;VitesseMoyenne"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#auteur -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;auteur"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#capacite -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;capacite"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#contenu -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;contenu"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#datedecration -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;datedecration"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#email -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;email"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#nom -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;nom"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#prenom -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;prenom"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#resume -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;resume"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#titre -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;titre"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#Admin -->
+
+    <Class rdf:about="&untitled-ontology-24;Admin">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;Utilisateur"/>
+        <disjointWith rdf:resource="&untitled-ontology-24;Client"/>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#Bus -->
+
+    <Class rdf:about="&untitled-ontology-24;Bus">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-24;MoyensDeTransport"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-24;aStationArrivee"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-24;StationDeBus"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-24;aEconomiesDEnergie"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-24;ReductionDePollution"/>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;MoyensDeTransport"/>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#Client -->
+
+    <Class rdf:about="&untitled-ontology-24;Client">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;Utilisateur"/>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#Covoitureur -->
+
+    <Class rdf:about="&untitled-ontology-24;Covoitureur">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-24;Utilisateur"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-24;aCovoitureur"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-24;TrajetPartage"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;Utilisateur"/>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#EconomiesDEnergie -->
+
+    <Class rdf:about="&untitled-ontology-24;EconomiesDEnergie">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-24;ImpactEcologique"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-24;aEconomiesDEnergie"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-24;Trajet"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;ImpactEcologique"/>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#EmissionsDeCO2 -->
+
+    <Class rdf:about="&untitled-ontology-24;EmissionsDeCO2">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-24;ImpactEcologique"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-24;aEmissionsCO2"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-24;Trajet"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;ImpactEcologique"/>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#ImpactEcologique -->
+
+    <Class rdf:about="&untitled-ontology-24;ImpactEcologique">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-24;creePar"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-24;Admin"/>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#Metro -->
+
+    <Class rdf:about="&untitled-ontology-24;Metro">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-24;MoyensDeTransport"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-24;aStationArrivee"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-24;StationDeMetro"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;MoyensDeTransport"/>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#MoyensDeTransport -->
+
+    <Class rdf:about="&untitled-ontology-24;MoyensDeTransport">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-24;creePar"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-24;Admin"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-24;aCovoitureur"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-24;Covoitureur"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-24;aTrajet"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-24;Trajet"/>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#Rapport -->
+
+    <Class rdf:about="&untitled-ontology-24;Rapport">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-24;pourUnClient"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-24;Client"/>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#RapportImpactEcologique -->
+
+    <Class rdf:about="&untitled-ontology-24;RapportImpactEcologique">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-24;Rapport"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-24;aImpactEcologique"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-24;ImpactEcologique"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;Rapport"/>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#RapportTrajet -->
+
+    <Class rdf:about="&untitled-ontology-24;RapportTrajet">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;Rapport"/>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#RapportUtilisation -->
+
+    <Class rdf:about="&untitled-ontology-24;RapportUtilisation">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;Rapport"/>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#ReductionDePollution -->
+
+    <Class rdf:about="&untitled-ontology-24;ReductionDePollution">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;ImpactEcologique"/>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#StationDeBus -->
+
+    <Class rdf:about="&untitled-ontology-24;StationDeBus">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;StationTransport"/>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#StationDeMetro -->
+
+    <Class rdf:about="&untitled-ontology-24;StationDeMetro">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;StationTransport"/>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#StationDeTramway -->
+
+    <Class rdf:about="&untitled-ontology-24;StationDeTramway">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;StationTransport"/>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#StationDeTrottinettes -->
+
+    <Class rdf:about="&untitled-ontology-24;StationDeTrottinettes">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;StationTransport"/>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#StationDeVelos -->
+
+    <Class rdf:about="&untitled-ontology-24;StationDeVelos">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;StationTransport"/>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#StationTransport -->
+
+    <Class rdf:about="&untitled-ontology-24;StationTransport">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-24;creePar"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-24;Admin"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-24;StationDeBus"/>
+                    <rdf:Description rdf:about="&untitled-ontology-24;StationDeMetro"/>
+                    <rdf:Description rdf:about="&untitled-ontology-24;StationDeTramway"/>
+                    <rdf:Description rdf:about="&untitled-ontology-24;StationDeTrottinettes"/>
+                    <rdf:Description rdf:about="&untitled-ontology-24;StationDeVelos"/>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#Trajet -->
+
+    <Class rdf:about="&untitled-ontology-24;Trajet">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-24;aModeTransport"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-24;StationTransport"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-24;aImpactEcologique"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-24;ImpactEcologique"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-24;aStationDepart"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-24;StationTransport"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-24;aProprietaire"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-24;Client"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-24;aMoyenDeTransport"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-24;MoyensDeTransport"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-24;aStationArrivee"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-24;StationTransport"/>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#TrajetInterurbain -->
+
+    <Class rdf:about="&untitled-ontology-24;TrajetInterurbain">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-24;Trajet"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-24;aStationDepart"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-24;StationTransport"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;Trajet"/>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#TrajetLongueDistance -->
+
+    <Class rdf:about="&untitled-ontology-24;TrajetLongueDistance">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;Trajet"/>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#TrajetPartage -->
+
+    <Class rdf:about="&untitled-ontology-24;TrajetPartage">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-24;Trajet"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-24;aCovoitureur"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-24;Utilisateur"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;Trajet"/>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#TrajetUrbain -->
+
+    <Class rdf:about="&untitled-ontology-24;TrajetUrbain">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;Trajet"/>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#Tramway -->
+
+    <Class rdf:about="&untitled-ontology-24;Tramway">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-24;aTrajetLongueDistance"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-24;TrajetLongueDistance"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-24;MoyensDeTransport"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-24;aStationArrivee"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-24;StationDeTramway"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;MoyensDeTransport"/>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#Trotinette -->
+
+    <Class rdf:about="&untitled-ontology-24;Trotinette">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-24;aEconomiesDEnergie"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-24;EconomiesDEnergie"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-24;aReductionDePollution"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-24;ReductionDePollution"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-24;MoyensDeTransport"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-24;aStationArrivee"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-24;StationDeTrottinettes"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;MoyensDeTransport"/>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#Utilisateur -->
+
+    <Class rdf:about="&untitled-ontology-24;Utilisateur">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-24;estUnClient"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-24;Covoitureur"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-24;estUnAdmin"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-24;Admin"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-24;estUnClient"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-24;Client"/>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#Velo -->
+
+    <Class rdf:about="&untitled-ontology-24;Velo">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-24;aReductionDePollution"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-24;ReductionDePollution"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-24;MoyensDeTransport"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-24;aStationArrivee"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-24;StationDeVelos"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-24;aEconomiesDEnergie"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-24;EconomiesDEnergie"/>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;MoyensDeTransport"/>
+    </Class>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#VoiturePersonnelle -->
+
+    <Class rdf:about="&untitled-ontology-24;VoiturePersonnelle">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-24;aImpactEcologique"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-24;EmissionsDeCO2"/>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-24;MoyensDeTransport"/>
+    </Class>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#admin1 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;admin1">
+        <rdf:type rdf:resource="&untitled-ontology-24;Admin"/>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
+        <untitled-ontology-24:nom rdf:datatype="&xsd;string">admin</untitled-ontology-24:nom>
+        <untitled-ontology-24:email rdf:datatype="&xsd;string">admin@gmail.com</untitled-ontology-24:email>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#admin2 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;admin2">
+        <rdf:type rdf:resource="&untitled-ontology-24;Admin"/>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#bus1 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;bus1">
+        <untitled-ontology-24:PrixEstime rdf:datatype="&xsd;float">0.45</untitled-ontology-24:PrixEstime>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
+        <untitled-ontology-24:capacite rdf:datatype="&xsd;integer">50</untitled-ontology-24:capacite>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#client1 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;client1">
+        <rdf:type rdf:resource="&untitled-ontology-24;Client"/>
+        <untitled-ontology-24:NuméroDeTéléphone rdf:datatype="&xsd;string">0123456789</untitled-ontology-24:NuméroDeTéléphone>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
+        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">123 Rue de Paris, Paris, France</untitled-ontology-24:Adresse>
+        <untitled-ontology-24:prenom rdf:datatype="&xsd;string">Ali</untitled-ontology-24:prenom>
+        <untitled-ontology-24:nom rdf:datatype="&xsd;string">adem</untitled-ontology-24:nom>
+        <untitled-ontology-24:email rdf:datatype="&xsd;string">adem@example.com</untitled-ontology-24:email>
+        <untitled-ontology-24:aPreferenceTransport rdf:resource="&untitled-ontology-24;velo1"/>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#client2 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;client2">
+        <rdf:type rdf:resource="&untitled-ontology-24;Client"/>
+        <untitled-ontology-24:NuméroDeTéléphone rdf:datatype="&xsd;string">0987654321</untitled-ontology-24:NuméroDeTéléphone>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
+        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">456 Avenue des Champs, Paris, France</untitled-ontology-24:Adresse>
+        <untitled-ontology-24:prenom rdf:datatype="&xsd;string">Mohammed</untitled-ontology-24:prenom>
+        <untitled-ontology-24:nom rdf:datatype="&xsd;string">ahmed</untitled-ontology-24:nom>
+        <untitled-ontology-24:email rdf:datatype="&xsd;string">ahmed@gmail.com</untitled-ontology-24:email>
+        <untitled-ontology-24:aPreferenceTransport rdf:resource="&untitled-ontology-24;bus1"/>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#client3 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;client3">
+        <rdf:type rdf:resource="&untitled-ontology-24;Client"/>
+        <untitled-ontology-24:NuméroDeTéléphone rdf:datatype="&xsd;string">0123456789</untitled-ontology-24:NuméroDeTéléphone>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">3</untitled-ontology-24:Id>
+        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">789 Boulevard Saint-Germain, Paris, France</untitled-ontology-24:Adresse>
+        <untitled-ontology-24:prenom rdf:datatype="&xsd;string">Fatima</untitled-ontology-24:prenom>
+        <untitled-ontology-24:nom rdf:datatype="&xsd;string">sara</untitled-ontology-24:nom>
+        <untitled-ontology-24:email rdf:datatype="&xsd;string">sara.fatima@example.com</untitled-ontology-24:email>
+        <untitled-ontology-24:aPreferenceTransport rdf:resource="&untitled-ontology-24;metro1"/>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#client4 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;client4">
+        <rdf:type rdf:resource="&untitled-ontology-24;Client"/>
+        <untitled-ontology-24:NuméroDeTéléphone rdf:datatype="&xsd;string">0987654321</untitled-ontology-24:NuméroDeTéléphone>
+        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">321 Rue de la Paix, Paris, France</untitled-ontology-24:Adresse>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">4</untitled-ontology-24:Id>
+        <untitled-ontology-24:prenom rdf:datatype="&xsd;string">Youssef</untitled-ontology-24:prenom>
+        <untitled-ontology-24:nom rdf:datatype="&xsd;string">karim</untitled-ontology-24:nom>
+        <untitled-ontology-24:email rdf:datatype="&xsd;string">karim.youssef@gmail.com</untitled-ontology-24:email>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#covoitureur1 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;covoitureur1">
+        <rdf:type rdf:resource="&untitled-ontology-24;Covoitureur"/>
+        <untitled-ontology-24:NuméroDeTéléphone rdf:datatype="&xsd;string">0123456789</untitled-ontology-24:NuméroDeTéléphone>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
+        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">123 Rue de la Liberté, Paris, France</untitled-ontology-24:Adresse>
+        <untitled-ontology-24:nom rdf:datatype="&xsd;string">ali</untitled-ontology-24:nom>
+        <untitled-ontology-24:email rdf:datatype="&xsd;string">aliadem@gmail.com</untitled-ontology-24:email>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#covoitureur2 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;covoitureur2">
+        <rdf:type rdf:resource="&untitled-ontology-24;Covoitureur"/>
+        <untitled-ontology-24:NuméroDeTéléphone rdf:datatype="&xsd;string">0987654321</untitled-ontology-24:NuméroDeTéléphone>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
+        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">456 Avenue des Champs, Paris, France</untitled-ontology-24:Adresse>
+        <untitled-ontology-24:nom rdf:datatype="&xsd;string">sophie</untitled-ontology-24:nom>
+        <untitled-ontology-24:email rdf:datatype="&xsd;string">sophie@example.com</untitled-ontology-24:email>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#covoitureur3 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;covoitureur3">
+        <rdf:type rdf:resource="&untitled-ontology-24;Covoitureur"/>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">3</untitled-ontology-24:Id>
+        <untitled-ontology-24:nom rdf:datatype="&xsd;string">mohammed</untitled-ontology-24:nom>
+        <untitled-ontology-24:email>mohammed@example.com</untitled-ontology-24:email>
+        <untitled-ontology-24:Addresse>789 Boulevard Saint-Michel, Paris, France</untitled-ontology-24:Addresse>
+        <untitled-ontology-24:NumberDeTéléphone>0678901234</untitled-ontology-24:NumberDeTéléphone>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#economiesdenergie1 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;economiesdenergie1">
+        <rdf:type rdf:resource="&untitled-ontology-24;EconomiesDEnergie"/>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
+        <untitled-ontology-24:MontantEconomise rdf:datatype="&xsd;float">1500.0</untitled-ontology-24:MontantEconomise>
+        <untitled-ontology-24:DateImplementation rdf:datatype="&xsd;date">2023-05-15</untitled-ontology-24:DateImplementation>
+        <untitled-ontology-24:Description rdf:datatype="&xsd;string">Utilisation de panneaux solaires pour réduire la consommation d&apos;énergie.</untitled-ontology-24:Description>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#economiesdenergie2 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;economiesdenergie2">
+        <rdf:type rdf:resource="&untitled-ontology-24;EconomiesDEnergie"/>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
+        <untitled-ontology-24:MontantEconomise rdf:datatype="&xsd;float">2000.0</untitled-ontology-24:MontantEconomise>
+        <untitled-ontology-24:DateImplementation rdf:datatype="&xsd;date">2023-08-01</untitled-ontology-24:DateImplementation>
+        <untitled-ontology-24:Description rdf:datatype="&xsd;string">Amélioration de l&apos;isolation thermique dans les bâtiments.</untitled-ontology-24:Description>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#emissionsdeco2_1 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;emissionsdeco2_1">
+        <rdf:type rdf:resource="&untitled-ontology-24;EmissionsDeCO2"/>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
+        <untitled-ontology-24:QuantiteEmise rdf:datatype="&xsd;float">120.5</untitled-ontology-24:QuantiteEmise>
+        <untitled-ontology-24:DateEmission rdf:datatype="&xsd;date">2023-06-10</untitled-ontology-24:DateEmission>
+        <untitled-ontology-24:Source rdf:datatype="&xsd;string">Transports</untitled-ontology-24:Source>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#emissionsdeco2_2 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;emissionsdeco2_2">
+        <rdf:type rdf:resource="&untitled-ontology-24;EmissionsDeCO2"/>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
+        <untitled-ontology-24:DateEmission rdf:datatype="&xsd;date">2023-07-15</untitled-ontology-24:DateEmission>
+        <untitled-ontology-24:QuantiteEmise rdf:datatype="&xsd;float">250.0</untitled-ontology-24:QuantiteEmise>
+        <untitled-ontology-24:Source rdf:datatype="&xsd;string">Industrie</untitled-ontology-24:Source>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#metro1 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;metro1">
+        <rdf:type rdf:resource="&untitled-ontology-24;Metro"/>
+        <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">05:30 - 00:30</untitled-ontology-24:HorairesOuverture>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
+        <untitled-ontology-24:CapacitéMax rdf:datatype="&xsd;integer">1500</untitled-ontology-24:CapacitéMax>
+        <untitled-ontology-24:NomMetro rdf:datatype="&xsd;string">Metro Ligne 1</untitled-ontology-24:NomMetro>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#metro2 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;metro2">
+        <rdf:type rdf:resource="&untitled-ontology-24;Metro"/>
+        <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">05:00 - 01:00</untitled-ontology-24:HorairesOuverture>
+        <untitled-ontology-24:CapacitéMax rdf:datatype="&xsd;integer">1200</untitled-ontology-24:CapacitéMax>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
+        <untitled-ontology-24:NomMetro rdf:datatype="&xsd;string">Metro Ligne 2</untitled-ontology-24:NomMetro>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#reductionDePollution1 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;reductionDePollution1">
+        <rdf:type rdf:resource="&untitled-ontology-24;ReductionDePollution"/>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
+        <untitled-ontology-24:DateImplementation rdf:datatype="&xsd;date">2023-09-01</untitled-ontology-24:DateImplementation>
+        <untitled-ontology-24:MontantEconomise rdf:datatype="&xsd;float">3000.0</untitled-ontology-24:MontantEconomise>
+        <untitled-ontology-24:Description rdf:datatype="&xsd;string">Implémentation de filtres à particules dans les véhicules.</untitled-ontology-24:Description>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#reductionDePollution2 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;reductionDePollution2">
+        <rdf:type rdf:resource="&untitled-ontology-24;ReductionDePollution"/>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
+        <untitled-ontology-24:DateImplementation rdf:datatype="&xsd;date">2023-10-15</untitled-ontology-24:DateImplementation>
+        <untitled-ontology-24:MontantEconomise rdf:datatype="&xsd;float">5000.0</untitled-ontology-24:MontantEconomise>
+        <untitled-ontology-24:Description rdf:datatype="&xsd;string">Promotion de l&apos;utilisation des transports en commun.</untitled-ontology-24:Description>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#stationDeBus1 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;stationDeBus1">
+        <rdf:type rdf:resource="&untitled-ontology-24;StationDeBus"/>
+        <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">06:00 - 22:00</untitled-ontology-24:HorairesOuverture>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
+        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">123 Avenue de la République, Paris, France</untitled-ontology-24:Adresse>
+        <untitled-ontology-24:NomStation rdf:datatype="&xsd;string">Gare Routière</untitled-ontology-24:NomStation>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#stationDeBus2 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;stationDeBus2">
+        <rdf:type rdf:resource="&untitled-ontology-24;StationDeBus"/>
+        <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">05:30 - 23:30</untitled-ontology-24:HorairesOuverture>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
+        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">456 Boulevard de la Nation, Paris, France</untitled-ontology-24:Adresse>
+        <untitled-ontology-24:NomStation rdf:datatype="&xsd;string">Place de la Nation</untitled-ontology-24:NomStation>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#stationDeBus3 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;stationDeBus3">
+        <rdf:type rdf:resource="&untitled-ontology-24;StationDeBus"/>
+        <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">06:30 - 21:30</untitled-ontology-24:HorairesOuverture>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">3</untitled-ontology-24:Id>
+        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">789 Avenue des Champs Élysées, Paris, France</untitled-ontology-24:Adresse>
+        <untitled-ontology-24:NomStation rdf:datatype="&xsd;string">Champs Élysées</untitled-ontology-24:NomStation>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#stationDeMetro1 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;stationDeMetro1">
+        <rdf:type rdf:resource="&untitled-ontology-24;StationDeMetro"/>
+        <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">05:30 - 01:00</untitled-ontology-24:HorairesOuverture>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
+        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">1 Place du Châtelet, Paris, France</untitled-ontology-24:Adresse>
+        <untitled-ontology-24:NomStation rdf:datatype="&xsd;string">Châtelet</untitled-ontology-24:NomStation>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#stationDeMetro2 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;stationDeMetro2">
+        <rdf:type rdf:resource="&untitled-ontology-24;StationDeMetro"/>
+        <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">05:00 - 00:30</untitled-ontology-24:HorairesOuverture>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
+        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">Cour de Rome, 75008 Paris, France</untitled-ontology-24:Adresse>
+        <untitled-ontology-24:NomStation rdf:datatype="&xsd;string">Gare Saint-Lazare</untitled-ontology-24:NomStation>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#stationDeMetro3 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;stationDeMetro3">
+        <rdf:type rdf:resource="&untitled-ontology-24;StationDeMetro"/>
+        <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">05:30 - 01:00</untitled-ontology-24:HorairesOuverture>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">3</untitled-ontology-24:Id>
+        <untitled-ontology-24:NomStation rdf:datatype="&xsd;string">Opéra</untitled-ontology-24:NomStation>
+        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">Place de l&apos;Opéra, 75009 Paris, France</untitled-ontology-24:Adresse>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#stationDeTramway1 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;stationDeTramway1">
+        <rdf:type rdf:resource="&untitled-ontology-24;StationDeTramway"/>
+        <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">06:00 - 00:30</untitled-ontology-24:HorairesOuverture>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
+        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">Place de la République, Paris, France</untitled-ontology-24:Adresse>
+        <untitled-ontology-24:NomStation rdf:datatype="&xsd;string">Station de Tramway République</untitled-ontology-24:NomStation>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#stationDeTramway2 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;stationDeTramway2">
+        <rdf:type rdf:resource="&untitled-ontology-24;StationDeTramway"/>
+        <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">06:00 - 00:30</untitled-ontology-24:HorairesOuverture>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
+        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">Place de la Bastille, Paris, France</untitled-ontology-24:Adresse>
+        <untitled-ontology-24:NomStation rdf:datatype="&xsd;string">Station de Tramway Bastille</untitled-ontology-24:NomStation>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#stationDeTrottinettes1 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;stationDeTrottinettes1">
+        <rdf:type rdf:resource="&untitled-ontology-24;StationDeTrottinettes"/>
+        <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">06:00 - 22:00</untitled-ontology-24:HorairesOuverture>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
+        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">123 Rue de la Gare, Paris, France</untitled-ontology-24:Adresse>
+        <untitled-ontology-24:NomStation rdf:datatype="&xsd;string">Station de Trottinettes Gare</untitled-ontology-24:NomStation>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#stationDeTrottinettes2 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;stationDeTrottinettes2">
+        <rdf:type rdf:resource="&untitled-ontology-24;StationDeTrottinettes"/>
+        <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">06:00 - 22:00</untitled-ontology-24:HorairesOuverture>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
+        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">456 Boulevard de la Bastille, Paris, France</untitled-ontology-24:Adresse>
+        <untitled-ontology-24:NomStation rdf:datatype="&xsd;string">Station de Trottinettes Bastille</untitled-ontology-24:NomStation>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#stationDeVelos1 -->
+<NamedIndividual rdf:about="&untitled-ontology-24;stationDeVelos1">
+    <rdf:type rdf:resource="&untitled-ontology-24;StationDeVelos"/>
+    <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
+    <untitled-ontology-24:NomStation rdf:datatype="&xsd;string">Station de Vélos Gare</untitled-ontology-24:NomStation>
+    <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">789 Rue de la Gare, Paris, France</untitled-ontology-24:Adresse>
+    <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">06:00 - 22:00</untitled-ontology-24:HorairesOuverture>
+</NamedIndividual>
+
+<!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#stationDeVelos2 -->
+<NamedIndividual rdf:about="&untitled-ontology-24;stationDeVelos2">
+    <rdf:type rdf:resource="&untitled-ontology-24;StationDeVelos"/>
+    <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
+    <untitled-ontology-24:NomStation rdf:datatype="&xsd;string">Station de Vélos Bastille</untitled-ontology-24:NomStation>
+    <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">321 Boulevard de la Bastille, Paris, France</untitled-ontology-24:Adresse>
+    <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">06:00 - 22:00</untitled-ontology-24:HorairesOuverture>
+</NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#trajet1 -->
+<NamedIndividual rdf:about="&untitled-ontology-24;trajet1">
+    <rdf:type rdf:resource="&untitled-ontology-24;TrajetUrbain"/>
+    <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
+    <untitled-ontology-24:aProprietaire rdf:resource="&untitled-ontology-24;admin1"/>
+    <untitled-ontology-24:aUtilisateur rdf:resource="&untitled-ontology-24;client1"/>
+    <untitled-ontology-24:aUtilisateur rdf:resource="&untitled-ontology-24;client2"/>
+    <untitled-ontology-24:aCovoitureur rdf:resource="&untitled-ontology-24;covoitureur1"/>
+    <untitled-ontology-24:aStationDepart rdf:resource="&untitled-ontology-24;stationDeBus1"/>
+    <untitled-ontology-24:aStationArrivee rdf:resource="&untitled-ontology-24;stationDeMetro1"/>
+</NamedIndividual>
+
+<!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#trajet2 -->
+<NamedIndividual rdf:about="&untitled-ontology-24;trajet2">
+    <rdf:type rdf:resource="&untitled-ontology-24;TrajetUrbain"/>
+    <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
+    <untitled-ontology-24:aProprietaire rdf:resource="&untitled-ontology-24;admin2"/>
+    <untitled-ontology-24:aUtilisateur rdf:resource="&untitled-ontology-24;client3"/>
+    <untitled-ontology-24:aUtilisateur rdf:resource="&untitled-ontology-24;client4"/>
+    <untitled-ontology-24:aCovoitureur rdf:resource="&untitled-ontology-24;covoitureur2"/>
+    <untitled-ontology-24:aStationDepart rdf:resource="&untitled-ontology-24;stationDeBus2"/>
+    <untitled-ontology-24:aStationArrivee rdf:resource="&untitled-ontology-24;stationDeMetro2"/>
+</NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#trajet2 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;trajet2">
+        <rdf:type rdf:resource="&untitled-ontology-24;TrajetLongueDistance"/>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
+        <untitled-ontology-24:aCovoitureur></untitled-ontology-24:aCovoitureur>
+        <untitled-ontology-24:composeDe></untitled-ontology-24:composeDe>
+        <untitled-ontology-24:aStationDepart></untitled-ontology-24:aStationDepart>
+        <untitled-ontology-24:aStationArrivee></untitled-ontology-24:aStationArrivee>
+        <untitled-ontology-24:aUtilisateur></untitled-ontology-24:aUtilisateur>
+        <untitled-ontology-24:aProprietaire rdf:resource="&untitled-ontology-24;admin2"/>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#tramway1 -->
+<NamedIndividual rdf:about="&untitled-ontology-24;tramway1">
+    <rdf:type rdf:resource="&untitled-ontology-24;Tramway"/>
+    <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
+    <untitled-ontology-24:NomTramway rdf:datatype="&xsd;string">Tramway Ligne A</untitled-ontology-24:NomTramway>
+    <untitled-ontology-24:CapacitéMax rdf:datatype="&xsd;integer">300</untitled-ontology-24:CapacitéMax>
+    <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">05:00 - 00:30</untitled-ontology-24:HorairesOuverture>
+</NamedIndividual>
+
+<!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#tramway2 -->
+<NamedIndividual rdf:about="&untitled-ontology-24;tramway2">
+    <rdf:type rdf:resource="&untitled-ontology-24;Tramway"/>
+    <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
+    <untitled-ontology-24:NomTramway rdf:datatype="&xsd;string">Tramway Ligne B</untitled-ontology-24:NomTramway>
+    <untitled-ontology-24:CapacitéMax rdf:datatype="&xsd;integer">250</untitled-ontology-24:CapacitéMax>
+    <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">05:30 - 01:00</untitled-ontology-24:HorairesOuverture>
+</NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#trotinette1 -->
+<NamedIndividual rdf:about="&untitled-ontology-24;trotinette1">
+    <rdf:type rdf:resource="&untitled-ontology-24;Trotinette"/>
+    <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
+    <untitled-ontology-24:NomTrotinette rdf:datatype="&xsd;string">Trotinette Électrique</untitled-ontology-24:NomTrotinette>
+    <untitled-ontology-24:CapacitéMax rdf:datatype="&xsd;integer">1</untitled-ontology-24:CapacitéMax>
+    <untitled-ontology-24:Statut rdf:datatype="&xsd;string">Disponible</untitled-ontology-24:Statut>
+</NamedIndividual>
+
+<!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#trotinette2 -->
+<NamedIndividual rdf:about="&untitled-ontology-24;trotinette2">
+    <rdf:type rdf:resource="&untitled-ontology-24;Trotinette"/>
+    <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
+    <untitled-ontology-24:NomTrotinette rdf:datatype="&xsd;string">Trotinette Standard</untitled-ontology-24:NomTrotinette>
+    <untitled-ontology-24:CapacitéMax rdf:datatype="&xsd;integer">1</untitled-ontology-24:CapacitéMax>
+    <untitled-ontology-24:Statut rdf:datatype="&xsd;string">En Maintenance</untitled-ontology-24:Statut>
+</NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#velo1 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;velo1">
+        <rdf:type rdf:resource="&untitled-ontology-24;Velo"/>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
+        <untitled-ontology-24:CapacitéMax rdf:datatype="&xsd;integer">2</untitled-ontology-24:CapacitéMax>
+        <untitled-ontology-24:Couleur rdf:datatype="&xsd;string">Rouge</untitled-ontology-24:Couleur>
+        <untitled-ontology-24:NomVelo rdf:datatype="&xsd;string">Vélo de Ville</untitled-ontology-24:NomVelo>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#velo2 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-24;velo2">
+        <rdf:type rdf:resource="&untitled-ontology-24;Velo"/>
+        <untitled-ontology-24:CapacitéMax rdf:datatype="&xsd;integer">1</untitled-ontology-24:CapacitéMax>
+        <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
+        <untitled-ontology-24:Couleur rdf:datatype="&xsd;string">Bleu</untitled-ontology-24:Couleur>
+        <untitled-ontology-24:NomVelo rdf:datatype="&xsd;string">Vélo de Course</untitled-ontology-24:NomVelo>
+    </NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#voiture1 -->
+<NamedIndividual rdf:about="&untitled-ontology-24;voiture1">
+    <rdf:type rdf:resource="&untitled-ontology-24;VoiturePersonnelle"/>
+    <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
+    <untitled-ontology-24:Marque rdf:datatype="&xsd;string">Toyota</untitled-ontology-24:Marque>
+    <untitled-ontology-24:Modele rdf:datatype="&xsd;string">Corolla</untitled-ontology-24:Modele>
+    <untitled-ontology-24:Annee rdf:datatype="&xsd;integer">2020</untitled-ontology-24:Annee>
+    <untitled-ontology-24:Couleur rdf:datatype="&xsd;string">Rouge</untitled-ontology-24:Couleur>
+    <untitled-ontology-24:Statut rdf:datatype="&xsd;string">Disponible</untitled-ontology-24:Statut>
+</NamedIndividual>
+
+<!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#voiture2 -->
+<NamedIndividual rdf:about="&untitled-ontology-24;voiture2">
+    <rdf:type rdf:resource="&untitled-ontology-24;VoiturePersonnelle"/>
+    <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
+    <untitled-ontology-24:Marque rdf:datatype="&xsd;string">Honda</untitled-ontology-24:Marque>
+    <untitled-ontology-24:Modele rdf:datatype="&xsd;string">Civic</untitled-ontology-24:Modele>
+    <untitled-ontology-24:Annee rdf:datatype="&xsd;integer">2019</untitled-ontology-24:Annee>
+    <untitled-ontology-24:Couleur rdf:datatype="&xsd;string">Bleu</untitled-ontology-24:Couleur>
+    <untitled-ontology-24:Statut rdf:datatype="&xsd;string">En Location</untitled-ontology-24:Statut>
+</NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
