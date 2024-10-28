@@ -47,21 +47,20 @@ public class MetroHandler implements HttpHandler {
     // GET method to retrieve metros
     private void handleGet(HttpExchange exchange) throws IOException {
         String queryString = "PREFIX ns: <" + ONTOLOGY_NAMESPACE + "> " +
-                "SELECT ?metro ?id ?nomMetro ?ligne ?couleur ?horairesOuverture ?horairesFermeture ?capaciteMax " +
+                "SELECT ?metro ?id ?nomMetro ?horairesOuverture ?capaciteMax " +
                 "WHERE { " +
                 "?metro a ns:Metro ; " +
                 "ns:Id ?id ; " +
                 "ns:NomMetro ?nomMetro ; " +
-                "ns:Ligne ?ligne ; " +
-                "ns:Couleur ?couleur ; " +
                 "ns:HorairesOuverture ?horairesOuverture ; " +
-                "ns:HorairesFermeture ?horairesFermeture ; " +
-                "ns:CapacitéMax ?capaciteMax ." +
+                "ns:CapaciteMax ?capaciteMax ." +
                 "}";
 
         String result = executeSparqlQuery(queryString);
         sendResponse(exchange, result, 200);
     }
+
+
 
     // POST method to create a new metro
     private void handlePost(HttpExchange exchange) throws IOException {
@@ -71,10 +70,7 @@ public class MetroHandler implements HttpHandler {
 
         String id = jsonObject.get("id").getAsString().trim();
         String nomMetro = jsonObject.get("nomMetro").getAsString().trim();
-        String ligne = jsonObject.get("ligne").getAsString().trim();
-        String couleur = jsonObject.get("couleur").getAsString().trim();
         String horairesOuverture = jsonObject.get("horairesOuverture").getAsString().trim();
-        String horairesFermeture = jsonObject.get("horairesFermeture").getAsString().trim();
         int capaciteMax = jsonObject.get("capaciteMax").getAsInt();
 
         String insertQuery = "PREFIX ns: <" + ONTOLOGY_NAMESPACE + "> " +
@@ -82,11 +78,8 @@ public class MetroHandler implements HttpHandler {
                 "<" + ONTOLOGY_NAMESPACE + "Metro" + id + "> a ns:Metro . " +
                 "<" + ONTOLOGY_NAMESPACE + "Metro" + id + "> ns:Id \"" + id + "\" . " +
                 "<" + ONTOLOGY_NAMESPACE + "Metro" + id + "> ns:NomMetro \"" + nomMetro + "\" . " +
-                "<" + ONTOLOGY_NAMESPACE + "Metro" + id + "> ns:Ligne \"" + ligne + "\" . " +
-                "<" + ONTOLOGY_NAMESPACE + "Metro" + id + "> ns:Couleur \"" + couleur + "\" . " +
                 "<" + ONTOLOGY_NAMESPACE + "Metro" + id + "> ns:HorairesOuverture \"" + horairesOuverture + "\" . " +
-                "<" + ONTOLOGY_NAMESPACE + "Metro" + id + "> ns:HorairesFermeture \"" + horairesFermeture + "\" . " +
-                "<" + ONTOLOGY_NAMESPACE + "Metro" + id + "> ns:CapacitéMax \"" + capaciteMax + "\" . }";
+                "<" + ONTOLOGY_NAMESPACE + "Metro" + id + "> ns:CapaciteMax \"" + capaciteMax + "\" . }";
 
         try {
             executeUpdate(insertQuery);
@@ -95,6 +88,7 @@ public class MetroHandler implements HttpHandler {
             sendResponse(exchange, createResponse("Failed to create metro: " + e.getMessage()), 500);
         }
     }
+
 
     // PUT method to update an existing metro
     private void handlePut(HttpExchange exchange) throws IOException {

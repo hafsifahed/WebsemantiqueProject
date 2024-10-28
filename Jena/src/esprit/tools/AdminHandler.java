@@ -45,21 +45,22 @@ public class AdminHandler implements HttpHandler {
     }
 
     // GET method to retrieve admins
+
+
     private void handleGet(HttpExchange exchange) throws IOException {
         String queryString = "PREFIX ns: <" + ONTOLOGY_NAMESPACE + "> " +
-                "SELECT ?admin ?id ?nom ?email ?motDePasse ?numeroDeTelephone " +
+                "SELECT ?admin ?id ?nom ?email " +
                 "WHERE { " +
                 "?admin a ns:Admin ; " +
                 "ns:Id ?id ; " +
-                "ns:Nom ?nom ; " +
-                "ns:Email ?email ; " +
-                "ns:MotDePasse ?motDePasse ; " +
-                "ns:NuméroDeTéléphone ?numeroDeTelephone ." +
+                "ns:nom ?nom ; " +
+                "ns:email ?email ." +
                 "}";
 
         String result = executeSparqlQuery(queryString);
         sendResponse(exchange, result, 200);
     }
+
 
     // POST method to create a new admin
     private void handlePost(HttpExchange exchange) throws IOException {

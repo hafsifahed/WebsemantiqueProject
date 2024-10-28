@@ -54,9 +54,7 @@ public class VoiturePersonnelleHandler implements HttpHandler {
                 "ns:Marque ?marque ; " +
                 "ns:Modele ?modele ; " +
                 "ns:Couleur ?couleur ; " +
-                "ns:Immatriculation ?immatriculation ; " +
                 "ns:Annee ?annee ; " +
-                "ns:Consommation ?consommation ." +
                 "}";
 
         String result = executeSparqlQuery(queryString);
@@ -73,9 +71,8 @@ public class VoiturePersonnelleHandler implements HttpHandler {
         String marque = jsonObject.get("marque").getAsString().trim();
         String modele = jsonObject.get("modele").getAsString().trim();
         String couleur = jsonObject.get("couleur").getAsString().trim();
-        String immatriculation = jsonObject.get("immatriculation").getAsString().trim();
         int annee = jsonObject.get("annee").getAsInt();
-        double consommation = jsonObject.get("consommation").getAsDouble();
+        String statut = jsonObject.get("statut").getAsString().trim();
 
         String insertQuery = "PREFIX ns: <" + ONTOLOGY_NAMESPACE + "> " +
                 "INSERT DATA { " +
@@ -84,9 +81,9 @@ public class VoiturePersonnelleHandler implements HttpHandler {
                 "<" + ONTOLOGY_NAMESPACE + "VoiturePersonnelle" + id + "> ns:Marque \"" + marque + "\" . " +
                 "<" + ONTOLOGY_NAMESPACE + "VoiturePersonnelle" + id + "> ns:Modele \"" + modele + "\" . " +
                 "<" + ONTOLOGY_NAMESPACE + "VoiturePersonnelle" + id + "> ns:Couleur \"" + couleur + "\" . " +
-                "<" + ONTOLOGY_NAMESPACE + "VoiturePersonnelle" + id + "> ns:Immatriculation \"" + immatriculation + "\" . " +
                 "<" + ONTOLOGY_NAMESPACE + "VoiturePersonnelle" + id + "> ns:Annee \"" + annee + "\" . " +
-                "<" + ONTOLOGY_NAMESPACE + "VoiturePersonnelle" + id + "> ns:Consommation \"" + consommation + "\" . }";
+                "<" + ONTOLOGY_NAMESPACE + "VoiturePersonnelle" + id + "> ns:Statut \"" + statut + "\" . " +
+                "}";
 
         try {
             executeUpdate(insertQuery);
@@ -95,6 +92,7 @@ public class VoiturePersonnelleHandler implements HttpHandler {
             sendResponse(exchange, createResponse("Failed to create personal car: " + e.getMessage()), 500);
         }
     }
+
 
     // PUT method to update an existing personal car
     private void handlePut(HttpExchange exchange) throws IOException {

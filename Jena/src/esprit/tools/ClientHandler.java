@@ -4,6 +4,10 @@ import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
+import org.apache.jena.update.UpdateExecutionFactory;
+import org.apache.jena.update.UpdateFactory;
+import org.apache.jena.update.UpdateProcessor;
+import org.apache.jena.update.UpdateRequest;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -16,6 +20,8 @@ import java.nio.charset.StandardCharsets;
 import java.util.Map;
 
 public class ClientHandler implements HttpHandler {
+    private static final String FUSEKI_SERVER_UPDATE_URL = "http://localhost:3030/projet/update";
+
     private String fusekiEndpoint; // URL de l'endpoint Fuseki
     private Gson gson = new Gson();
     private static final String ONTOLOGY_NAMESPACE = "http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#";
@@ -47,22 +53,24 @@ public class ClientHandler implements HttpHandler {
     // GET method to retrieve clients
     private void handleGet(HttpExchange exchange) throws IOException {
         String queryString = "PREFIX ns: <" + ONTOLOGY_NAMESPACE + "> " +
-                "SELECT ?client ?id ?nom ?motDePasse ?numeroDeTelephone ?adresse ?dateDeNaissance " +
+                "SELECT ?client ?id ?nom ?numeroDeTelephone ?adresse ?prenom ?email " +
                 "WHERE { " +
-                "?client a ns:estUnClient ; " +
+                "?client a ns:Client ; " +
                 "ns:Id ?id ; " +
-                "ns:Nom ?nom ; " +
-                "ns:MotDePasse ?motDePasse ; " +
-                "ns:NuméroDeTéléphone ?numeroDeTelephone ; " +
+                "ns:nom ?nom ; " +
+                "ns:NumeroDeTelephone ?numeroDeTelephone ; " +
                 "ns:Adresse ?adresse ; " +
-                "ns:DateDeNaissance ?dateDeNaissance ." +
+                "ns:prenom ?prenom ; " +
+                "ns:email ?email ." +
                 "}";
+
 
         String result = executeSparqlQuery(queryString);
         sendResponse(exchange, result, 200);
     }
 
     // POST method to create a new client
+
     private void handlePost(HttpExchange exchange) throws IOException {
         InputStream is = exchange.getRequestBody();
         String body = new String(is.readAllBytes(), StandardCharsets.UTF_8);
@@ -70,29 +78,49 @@ public class ClientHandler implements HttpHandler {
 
         String id = jsonObject.get("id").getAsString().trim();
         String nom = jsonObject.get("nom").getAsString().trim();
-        String motDePasse = jsonObject.get("motDePasse").getAsString().trim();
+        String prenom = jsonObject.get("prenom").getAsString().trim();
+        String motDePasse = jsonObject.get("motDePasse").getAsString().trim(); // Assuming motDePasse is needed
         String numeroDeTelephone = jsonObject.get("numeroDeTelephone").getAsString().trim();
         String adresse = jsonObject.get("adresse").getAsString().trim();
         String dateDeNaissance = jsonObject.get("dateDeNaissance").getAsString().trim();
+        String email = jsonObject.get("email").getAsString().trim();
+        String aPreferenceTransport = jsonObject.get("aPreferenceTransport").getAsString().trim(); // Assuming this is included
 
         String insertQuery = "PREFIX ns: <" + ONTOLOGY_NAMESPACE + "> " +
                 "INSERT DATA { " +
-                "<" + ONTOLOGY_NAMESPACE + "Client" + id + "> a ns:estUnClient . " +
+                "<" + ONTOLOGY_NAMESPACE + "Client" + id + "> a ns:Client . " +
                 "<" + ONTOLOGY_NAMESPACE + "Client" + id + "> ns:Id \"" + id + "\" . " +
                 "<" + ONTOLOGY_NAMESPACE + "Client" + id + "> ns:Nom \"" + nom + "\" . " +
-                "<" + ONTOLOGY_NAMESPACE + "Client" + id + "> ns:MotDePasse \"" + motDePasse + "\" . " +
-                "<" + ONTOLOGY_NAMESPACE + "Client" + id + "> ns:NuméroDeTéléphone \"" + numeroDeTelephone + "\" . " +
+                "<" + ONTOLOGY_NAMESPACE + "Client" + id + "> ns:prenom \"" + prenom + "\" . " +
+                "<" + ONTOLOGY_NAMESPACE + "Client" + id + "> ns:NumeroDeTelephone \"" + numeroDeTelephone + "\" . " +
                 "<" + ONTOLOGY_NAMESPACE + "Client" + id + "> ns:Adresse \"" + adresse + "\" . " +
                 "<" + ONTOLOGY_NAMESPACE + "Client" + id + "> ns:DateDeNaissance \"" + dateDeNaissance + "\" . " +
+                "<" + ONTOLOGY_NAMESPACE + "Client" + id + "> ns:email \"" + email + "\" . " +
+                "<" + ONTOLOGY_NAMESPACE + "Client" + id + "> ns:aPreferenceTransport <" + ONTOLOGY_NAMESPACE + aPreferenceTransport + "> . " +
                 "}";
 
         try {
-            executeUpdate(insertQuery);
+            executeUpdateQuery(insertQuery);
             sendResponse(exchange, createResponse("Client created: " + nom), 201);
         } catch (IOException e) {
             sendResponse(exchange, createResponse("Failed to create client: " + e.getMessage()), 500);
         }
     }
+
+
+
+    public String executeUpdateQuery(String sparqlUpdate) {
+        try {
+            UpdateRequest updateRequest = UpdateFactory.create(sparqlUpdate);
+            UpdateProcessor updateProcessor = UpdateExecutionFactory.createRemote(updateRequest, FUSEKI_SERVER_UPDATE_URL);
+            updateProcessor.execute();
+            return "Update executed successfully.";
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "Error executing update: " + e.getMessage();
+        }
+    }
+
 
     // PUT method to update an existing client
     private void handlePut(HttpExchange exchange) throws IOException {
@@ -102,46 +130,46 @@ public class ClientHandler implements HttpHandler {
 
         String id = jsonObject.get("id").getAsString().trim();
         String nom = jsonObject.get("nom").getAsString().trim();
+        String prenom = jsonObject.get("prenom").getAsString().trim();
         String motDePasse = jsonObject.get("motDePasse").getAsString().trim();
         String numeroDeTelephone = jsonObject.get("numeroDeTelephone").getAsString().trim();
         String adresse = jsonObject.get("adresse").getAsString().trim();
         String dateDeNaissance = jsonObject.get("dateDeNaissance").getAsString().trim();
+        String email = jsonObject.get("email").getAsString().trim();
+        String aPreferenceTransport = jsonObject.get("aPreferenceTransport").getAsString().trim();
 
         String updateQuery = "PREFIX ns: <" + ONTOLOGY_NAMESPACE + "> "
                 + "DELETE { "
                 + "<" + ONTOLOGY_NAMESPACE + "Client" + id + "> ns:Nom ?nom; "
+                + "ns:prenom ?prenom; "
                 + "ns:MotDePasse ?motDePasse; "
-                + "ns:NuméroDeTéléphone ?numero; "
+                + "ns:NumeroDeTelephone ?numero; "
                 + "ns:Adresse ?adresse; "
-                + "ns:DateDeNaissance ?date. } "
+                + "ns:DateDeNaissance ?date; "
+                + "ns:email ?email; "
+                + "ns:aPreferenceTransport ?transport. } "
                 + "INSERT { "
-                + "<" + ONTOLOGY_NAMESPACE + "Client"
-                + id
-                +" > ns:Nom \""
-                + nom
-                +"\"; ns:MotDePasse \""
-                + motDePasse
-                +"\"; ns:NuméroDeTéléphone \""
-                + numeroDeTelephone
-                +"\"; ns:Adresse \""
-                + adresse
-                +"\"; ns:DateDeNaissance \""
-                + dateDeNaissance
-                +"\". } "
-                +"WHERE { "
-                +"<"
-                + ONTOLOGY_NAMESPACE
-                +"Client"
-                + id
-                +" > ns:Nom ?nom; }";
+                + "<" + ONTOLOGY_NAMESPACE + "Client" + id + "> ns:Nom \"" + nom + "\"; "
+                + "ns:prenom \"" + prenom + "\"; "
+                + "ns:MotDePasse \"" + motDePasse + "\"; "
+                + "ns:NumeroDeTelephone \"" + numeroDeTelephone + "\"; "
+                + "ns:Adresse \"" + adresse + "\"; "
+                + "ns:DateDeNaissance \"" + dateDeNaissance + "\"; "
+                + "ns:email \"" + email + "\"; "
+                + "ns:aPreferenceTransport <" + ONTOLOGY_NAMESPACE + aPreferenceTransport + "> . } "
+                + "WHERE { "
+                + "<" + ONTOLOGY_NAMESPACE + "Client" + id + "> ns:Nom ?nom; "
+                + "ns:prenom ?prenom; }";
 
         try {
             executeUpdate(updateQuery);
             sendResponse(exchange, createResponse("Client updated: " + nom), 200);
         } catch (IOException e) {
-            sendResponse(exchange, createResponse("Failed to update client: "+ e.getMessage()), 500);
+            sendResponse(exchange, createResponse("Failed to update client: " + e.getMessage()), 500);
         }
     }
+
+
 
     // DELETE method to remove a client
     private void handleDelete(HttpExchange exchange) throws IOException {

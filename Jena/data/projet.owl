@@ -80,9 +80,9 @@
 
 
 
-    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#NumberDeTéléphone -->
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#NumberDeTelephone -->
 
-    <AnnotationProperty rdf:about="&untitled-ontology-24;NumberDeTéléphone"/>
+    <AnnotationProperty rdf:about="&untitled-ontology-24;NumberDeTelephone"/>
 
 
 
@@ -317,9 +317,9 @@
 
 
 
-    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#AccessibilitéPMR -->
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#AccessibilitePMR -->
 
-    <DatatypeProperty rdf:about="&untitled-ontology-24;AccessibilitéPMR"/>
+    <DatatypeProperty rdf:about="&untitled-ontology-24;AccessibilitePMR"/>
 
 
 
@@ -335,21 +335,21 @@
 
 
 
-    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#CapacitéMax -->
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#CapaciteMax -->
 
-    <DatatypeProperty rdf:about="&untitled-ontology-24;CapacitéMax"/>
-
-
-
-    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#CapacitéStation -->
-
-    <DatatypeProperty rdf:about="&untitled-ontology-24;CapacitéStation"/>
+    <DatatypeProperty rdf:about="&untitled-ontology-24;CapaciteMax"/>
 
 
 
-    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#ConsommationÉnergétique -->
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#CapaciteStation -->
 
-    <DatatypeProperty rdf:about="&untitled-ontology-24;ConsommationÉnergétique"/>
+    <DatatypeProperty rdf:about="&untitled-ontology-24;CapaciteStation"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#Consommationenergetique -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;Consommationenergetique"/>
 
 
 
@@ -373,9 +373,9 @@
 
 
 
-    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#Disponibilité -->
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#Disponibilite -->
 
-    <DatatypeProperty rdf:about="&untitled-ontology-24;Disponibilité"/>
+    <DatatypeProperty rdf:about="&untitled-ontology-24;Disponibilite"/>
 
 
 
@@ -385,21 +385,21 @@
 
 
 
-    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#DuréeEstimee -->
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#DureeEstimee -->
 
-    <DatatypeProperty rdf:about="&untitled-ontology-24;DuréeEstimee"/>
-
-
-
-    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#HeureD&apos;Arrivée -->
-
-    <DatatypeProperty rdf:about="&untitled-ontology-24;HeureD&apos;Arrivée"/>
+    <DatatypeProperty rdf:about="&untitled-ontology-24;DureeEstimee"/>
 
 
 
-    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#HeureDeDépart -->
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#HeureD&apos;Arrivee -->
 
-    <DatatypeProperty rdf:about="&untitled-ontology-24;HeureDeDépart">
+    <DatatypeProperty rdf:about="&untitled-ontology-24;HeureD&apos;Arrivee"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#HeureDeDepart -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;HeureDeDepart">
         <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
     </DatatypeProperty>
 
@@ -441,21 +441,21 @@
 
 
 
-    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#NuméroDeTéléphone -->
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#NumeroDeTelephone -->
 
-    <DatatypeProperty rdf:about="&untitled-ontology-24;NuméroDeTéléphone"/>
-
-
-
-    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#PointD&apos;Arrivée -->
-
-    <DatatypeProperty rdf:about="&untitled-ontology-24;PointD&apos;Arrivée"/>
+    <DatatypeProperty rdf:about="&untitled-ontology-24;NumeroDeTelephone"/>
 
 
 
-    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#PointDeDépart -->
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#PointD&apos;Arrivee -->
 
-    <DatatypeProperty rdf:about="&untitled-ontology-24;PointDeDépart"/>
+    <DatatypeProperty rdf:about="&untitled-ontology-24;PointD&apos;Arrivee"/>
+
+
+
+    <!-- http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#PointDeDepart -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-24;PointDeDepart"/>
 
 
 
@@ -1097,7 +1097,7 @@
 
     <NamedIndividual rdf:about="&untitled-ontology-24;client1">
         <rdf:type rdf:resource="&untitled-ontology-24;Client"/>
-        <untitled-ontology-24:NuméroDeTéléphone rdf:datatype="&xsd;string">0123456789</untitled-ontology-24:NuméroDeTéléphone>
+        <untitled-ontology-24:NumeroDeTelephone rdf:datatype="&xsd;string">0123456789</untitled-ontology-24:NumeroDeTelephone>
         <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
         <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">123 Rue de Paris, Paris, France</untitled-ontology-24:Adresse>
         <untitled-ontology-24:prenom rdf:datatype="&xsd;string">Ali</untitled-ontology-24:prenom>
@@ -1112,7 +1112,7 @@
 
     <NamedIndividual rdf:about="&untitled-ontology-24;client2">
         <rdf:type rdf:resource="&untitled-ontology-24;Client"/>
-        <untitled-ontology-24:NuméroDeTéléphone rdf:datatype="&xsd;string">0987654321</untitled-ontology-24:NuméroDeTéléphone>
+        <untitled-ontology-24:NumeroDeTelephone rdf:datatype="&xsd;string">0987654321</untitled-ontology-24:NumeroDeTelephone>
         <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
         <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">456 Avenue des Champs, Paris, France</untitled-ontology-24:Adresse>
         <untitled-ontology-24:prenom rdf:datatype="&xsd;string">Mohammed</untitled-ontology-24:prenom>
@@ -1127,7 +1127,7 @@
 
     <NamedIndividual rdf:about="&untitled-ontology-24;client3">
         <rdf:type rdf:resource="&untitled-ontology-24;Client"/>
-        <untitled-ontology-24:NuméroDeTéléphone rdf:datatype="&xsd;string">0123456789</untitled-ontology-24:NuméroDeTéléphone>
+        <untitled-ontology-24:NumeroDeTelephone rdf:datatype="&xsd;string">0123456789</untitled-ontology-24:NumeroDeTelephone>
         <untitled-ontology-24:Id rdf:datatype="&xsd;integer">3</untitled-ontology-24:Id>
         <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">789 Boulevard Saint-Germain, Paris, France</untitled-ontology-24:Adresse>
         <untitled-ontology-24:prenom rdf:datatype="&xsd;string">Fatima</untitled-ontology-24:prenom>
@@ -1142,7 +1142,7 @@
 
     <NamedIndividual rdf:about="&untitled-ontology-24;client4">
         <rdf:type rdf:resource="&untitled-ontology-24;Client"/>
-        <untitled-ontology-24:NuméroDeTéléphone rdf:datatype="&xsd;string">0987654321</untitled-ontology-24:NuméroDeTéléphone>
+        <untitled-ontology-24:NumeroDeTelephone rdf:datatype="&xsd;string">0987654321</untitled-ontology-24:NumeroDeTelephone>
         <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">321 Rue de la Paix, Paris, France</untitled-ontology-24:Adresse>
         <untitled-ontology-24:Id rdf:datatype="&xsd;integer">4</untitled-ontology-24:Id>
         <untitled-ontology-24:prenom rdf:datatype="&xsd;string">Youssef</untitled-ontology-24:prenom>
@@ -1156,9 +1156,9 @@
 
     <NamedIndividual rdf:about="&untitled-ontology-24;covoitureur1">
         <rdf:type rdf:resource="&untitled-ontology-24;Covoitureur"/>
-        <untitled-ontology-24:NuméroDeTéléphone rdf:datatype="&xsd;string">0123456789</untitled-ontology-24:NuméroDeTéléphone>
+        <untitled-ontology-24:NumeroDeTelephone rdf:datatype="&xsd;string">0123456789</untitled-ontology-24:NumeroDeTelephone>
         <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
-        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">123 Rue de la Liberté, Paris, France</untitled-ontology-24:Adresse>
+        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">123 Rue de la Liberte, Paris, France</untitled-ontology-24:Adresse>
         <untitled-ontology-24:nom rdf:datatype="&xsd;string">ali</untitled-ontology-24:nom>
         <untitled-ontology-24:email rdf:datatype="&xsd;string">aliadem@gmail.com</untitled-ontology-24:email>
     </NamedIndividual>
@@ -1169,7 +1169,7 @@
 
     <NamedIndividual rdf:about="&untitled-ontology-24;covoitureur2">
         <rdf:type rdf:resource="&untitled-ontology-24;Covoitureur"/>
-        <untitled-ontology-24:NuméroDeTéléphone rdf:datatype="&xsd;string">0987654321</untitled-ontology-24:NuméroDeTéléphone>
+        <untitled-ontology-24:NumeroDeTelephone rdf:datatype="&xsd;string">0987654321</untitled-ontology-24:NumeroDeTelephone>
         <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
         <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">456 Avenue des Champs, Paris, France</untitled-ontology-24:Adresse>
         <untitled-ontology-24:nom rdf:datatype="&xsd;string">sophie</untitled-ontology-24:nom>
@@ -1186,7 +1186,7 @@
         <untitled-ontology-24:nom rdf:datatype="&xsd;string">mohammed</untitled-ontology-24:nom>
         <untitled-ontology-24:email>mohammed@example.com</untitled-ontology-24:email>
         <untitled-ontology-24:Addresse>789 Boulevard Saint-Michel, Paris, France</untitled-ontology-24:Addresse>
-        <untitled-ontology-24:NumberDeTéléphone>0678901234</untitled-ontology-24:NumberDeTéléphone>
+        <untitled-ontology-24:NumberDeTelephone>0678901234</untitled-ontology-24:NumberDeTelephone>
     </NamedIndividual>
 
 
@@ -1198,7 +1198,7 @@
         <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
         <untitled-ontology-24:MontantEconomise rdf:datatype="&xsd;float">1500.0</untitled-ontology-24:MontantEconomise>
         <untitled-ontology-24:DateImplementation rdf:datatype="&xsd;date">2023-05-15</untitled-ontology-24:DateImplementation>
-        <untitled-ontology-24:Description rdf:datatype="&xsd;string">Utilisation de panneaux solaires pour réduire la consommation d&apos;énergie.</untitled-ontology-24:Description>
+        <untitled-ontology-24:Description rdf:datatype="&xsd;string">Utilisation de panneaux solaires pour reduire la consommation d&apos;energie.</untitled-ontology-24:Description>
     </NamedIndividual>
 
 
@@ -1210,7 +1210,7 @@
         <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
         <untitled-ontology-24:MontantEconomise rdf:datatype="&xsd;float">2000.0</untitled-ontology-24:MontantEconomise>
         <untitled-ontology-24:DateImplementation rdf:datatype="&xsd;date">2023-08-01</untitled-ontology-24:DateImplementation>
-        <untitled-ontology-24:Description rdf:datatype="&xsd;string">Amélioration de l&apos;isolation thermique dans les bâtiments.</untitled-ontology-24:Description>
+        <untitled-ontology-24:Description rdf:datatype="&xsd;string">Amelioration de l&apos;isolation thermique dans les bâtiments.</untitled-ontology-24:Description>
     </NamedIndividual>
 
 
@@ -1245,7 +1245,7 @@
         <rdf:type rdf:resource="&untitled-ontology-24;Metro"/>
         <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">05:30 - 00:30</untitled-ontology-24:HorairesOuverture>
         <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
-        <untitled-ontology-24:CapacitéMax rdf:datatype="&xsd;integer">1500</untitled-ontology-24:CapacitéMax>
+        <untitled-ontology-24:CapaciteMax rdf:datatype="&xsd;integer">1500</untitled-ontology-24:CapaciteMax>
         <untitled-ontology-24:NomMetro rdf:datatype="&xsd;string">Metro Ligne 1</untitled-ontology-24:NomMetro>
     </NamedIndividual>
 
@@ -1256,7 +1256,7 @@
     <NamedIndividual rdf:about="&untitled-ontology-24;metro2">
         <rdf:type rdf:resource="&untitled-ontology-24;Metro"/>
         <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">05:00 - 01:00</untitled-ontology-24:HorairesOuverture>
-        <untitled-ontology-24:CapacitéMax rdf:datatype="&xsd;integer">1200</untitled-ontology-24:CapacitéMax>
+        <untitled-ontology-24:CapaciteMax rdf:datatype="&xsd;integer">1200</untitled-ontology-24:CapaciteMax>
         <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
         <untitled-ontology-24:NomMetro rdf:datatype="&xsd;string">Metro Ligne 2</untitled-ontology-24:NomMetro>
     </NamedIndividual>
@@ -1270,7 +1270,7 @@
         <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
         <untitled-ontology-24:DateImplementation rdf:datatype="&xsd;date">2023-09-01</untitled-ontology-24:DateImplementation>
         <untitled-ontology-24:MontantEconomise rdf:datatype="&xsd;float">3000.0</untitled-ontology-24:MontantEconomise>
-        <untitled-ontology-24:Description rdf:datatype="&xsd;string">Implémentation de filtres à particules dans les véhicules.</untitled-ontology-24:Description>
+        <untitled-ontology-24:Description rdf:datatype="&xsd;string">Implementation de filtres à particules dans les vehicules.</untitled-ontology-24:Description>
     </NamedIndividual>
 
 
@@ -1293,7 +1293,7 @@
         <rdf:type rdf:resource="&untitled-ontology-24;StationDeBus"/>
         <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">06:00 - 22:00</untitled-ontology-24:HorairesOuverture>
         <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
-        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">123 Avenue de la République, Paris, France</untitled-ontology-24:Adresse>
+        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">123 Avenue de la Republique, Paris, France</untitled-ontology-24:Adresse>
         <untitled-ontology-24:NomStation rdf:datatype="&xsd;string">Gare Routière</untitled-ontology-24:NomStation>
     </NamedIndividual>
 
@@ -1317,8 +1317,8 @@
         <rdf:type rdf:resource="&untitled-ontology-24;StationDeBus"/>
         <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">06:30 - 21:30</untitled-ontology-24:HorairesOuverture>
         <untitled-ontology-24:Id rdf:datatype="&xsd;integer">3</untitled-ontology-24:Id>
-        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">789 Avenue des Champs Élysées, Paris, France</untitled-ontology-24:Adresse>
-        <untitled-ontology-24:NomStation rdf:datatype="&xsd;string">Champs Élysées</untitled-ontology-24:NomStation>
+        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">789 Avenue des Champs elysees, Paris, France</untitled-ontology-24:Adresse>
+        <untitled-ontology-24:NomStation rdf:datatype="&xsd;string">Champs elysees</untitled-ontology-24:NomStation>
     </NamedIndividual>
 
 
@@ -1353,8 +1353,8 @@
         <rdf:type rdf:resource="&untitled-ontology-24;StationDeMetro"/>
         <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">05:30 - 01:00</untitled-ontology-24:HorairesOuverture>
         <untitled-ontology-24:Id rdf:datatype="&xsd;integer">3</untitled-ontology-24:Id>
-        <untitled-ontology-24:NomStation rdf:datatype="&xsd;string">Opéra</untitled-ontology-24:NomStation>
-        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">Place de l&apos;Opéra, 75009 Paris, France</untitled-ontology-24:Adresse>
+        <untitled-ontology-24:NomStation rdf:datatype="&xsd;string">Opera</untitled-ontology-24:NomStation>
+        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">Place de l&apos;Opera, 75009 Paris, France</untitled-ontology-24:Adresse>
     </NamedIndividual>
 
 
@@ -1365,8 +1365,8 @@
         <rdf:type rdf:resource="&untitled-ontology-24;StationDeTramway"/>
         <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">06:00 - 00:30</untitled-ontology-24:HorairesOuverture>
         <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
-        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">Place de la République, Paris, France</untitled-ontology-24:Adresse>
-        <untitled-ontology-24:NomStation rdf:datatype="&xsd;string">Station de Tramway République</untitled-ontology-24:NomStation>
+        <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">Place de la Republique, Paris, France</untitled-ontology-24:Adresse>
+        <untitled-ontology-24:NomStation rdf:datatype="&xsd;string">Station de Tramway Republique</untitled-ontology-24:NomStation>
     </NamedIndividual>
 
 
@@ -1411,7 +1411,7 @@
 <NamedIndividual rdf:about="&untitled-ontology-24;stationDeVelos1">
     <rdf:type rdf:resource="&untitled-ontology-24;StationDeVelos"/>
     <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
-    <untitled-ontology-24:NomStation rdf:datatype="&xsd;string">Station de Vélos Gare</untitled-ontology-24:NomStation>
+    <untitled-ontology-24:NomStation rdf:datatype="&xsd;string">Station de Velos Gare</untitled-ontology-24:NomStation>
     <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">789 Rue de la Gare, Paris, France</untitled-ontology-24:Adresse>
     <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">06:00 - 22:00</untitled-ontology-24:HorairesOuverture>
 </NamedIndividual>
@@ -1420,7 +1420,7 @@
 <NamedIndividual rdf:about="&untitled-ontology-24;stationDeVelos2">
     <rdf:type rdf:resource="&untitled-ontology-24;StationDeVelos"/>
     <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
-    <untitled-ontology-24:NomStation rdf:datatype="&xsd;string">Station de Vélos Bastille</untitled-ontology-24:NomStation>
+    <untitled-ontology-24:NomStation rdf:datatype="&xsd;string">Station de Velos Bastille</untitled-ontology-24:NomStation>
     <untitled-ontology-24:Adresse rdf:datatype="&xsd;string">321 Boulevard de la Bastille, Paris, France</untitled-ontology-24:Adresse>
     <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">06:00 - 22:00</untitled-ontology-24:HorairesOuverture>
 </NamedIndividual>
@@ -1473,7 +1473,7 @@
     <rdf:type rdf:resource="&untitled-ontology-24;Tramway"/>
     <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
     <untitled-ontology-24:NomTramway rdf:datatype="&xsd;string">Tramway Ligne A</untitled-ontology-24:NomTramway>
-    <untitled-ontology-24:CapacitéMax rdf:datatype="&xsd;integer">300</untitled-ontology-24:CapacitéMax>
+    <untitled-ontology-24:CapaciteMax rdf:datatype="&xsd;integer">300</untitled-ontology-24:CapaciteMax>
     <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">05:00 - 00:30</untitled-ontology-24:HorairesOuverture>
 </NamedIndividual>
 
@@ -1482,7 +1482,7 @@
     <rdf:type rdf:resource="&untitled-ontology-24;Tramway"/>
     <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
     <untitled-ontology-24:NomTramway rdf:datatype="&xsd;string">Tramway Ligne B</untitled-ontology-24:NomTramway>
-    <untitled-ontology-24:CapacitéMax rdf:datatype="&xsd;integer">250</untitled-ontology-24:CapacitéMax>
+    <untitled-ontology-24:CapaciteMax rdf:datatype="&xsd;integer">250</untitled-ontology-24:CapaciteMax>
     <untitled-ontology-24:HorairesOuverture rdf:datatype="&xsd;string">05:30 - 01:00</untitled-ontology-24:HorairesOuverture>
 </NamedIndividual>
 
@@ -1492,8 +1492,8 @@
 <NamedIndividual rdf:about="&untitled-ontology-24;trotinette1">
     <rdf:type rdf:resource="&untitled-ontology-24;Trotinette"/>
     <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
-    <untitled-ontology-24:NomTrotinette rdf:datatype="&xsd;string">Trotinette Électrique</untitled-ontology-24:NomTrotinette>
-    <untitled-ontology-24:CapacitéMax rdf:datatype="&xsd;integer">1</untitled-ontology-24:CapacitéMax>
+    <untitled-ontology-24:NomTrotinette rdf:datatype="&xsd;string">Trotinette electrique</untitled-ontology-24:NomTrotinette>
+    <untitled-ontology-24:CapaciteMax rdf:datatype="&xsd;integer">1</untitled-ontology-24:CapaciteMax>
     <untitled-ontology-24:Statut rdf:datatype="&xsd;string">Disponible</untitled-ontology-24:Statut>
 </NamedIndividual>
 
@@ -1502,7 +1502,7 @@
     <rdf:type rdf:resource="&untitled-ontology-24;Trotinette"/>
     <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
     <untitled-ontology-24:NomTrotinette rdf:datatype="&xsd;string">Trotinette Standard</untitled-ontology-24:NomTrotinette>
-    <untitled-ontology-24:CapacitéMax rdf:datatype="&xsd;integer">1</untitled-ontology-24:CapacitéMax>
+    <untitled-ontology-24:CapaciteMax rdf:datatype="&xsd;integer">1</untitled-ontology-24:CapaciteMax>
     <untitled-ontology-24:Statut rdf:datatype="&xsd;string">En Maintenance</untitled-ontology-24:Statut>
 </NamedIndividual>
 
@@ -1513,9 +1513,9 @@
     <NamedIndividual rdf:about="&untitled-ontology-24;velo1">
         <rdf:type rdf:resource="&untitled-ontology-24;Velo"/>
         <untitled-ontology-24:Id rdf:datatype="&xsd;integer">1</untitled-ontology-24:Id>
-        <untitled-ontology-24:CapacitéMax rdf:datatype="&xsd;integer">2</untitled-ontology-24:CapacitéMax>
+        <untitled-ontology-24:CapaciteMax rdf:datatype="&xsd;integer">2</untitled-ontology-24:CapaciteMax>
         <untitled-ontology-24:Couleur rdf:datatype="&xsd;string">Rouge</untitled-ontology-24:Couleur>
-        <untitled-ontology-24:NomVelo rdf:datatype="&xsd;string">Vélo de Ville</untitled-ontology-24:NomVelo>
+        <untitled-ontology-24:NomVelo rdf:datatype="&xsd;string">Velo de Ville</untitled-ontology-24:NomVelo>
     </NamedIndividual>
 
 
@@ -1524,10 +1524,10 @@
 
     <NamedIndividual rdf:about="&untitled-ontology-24;velo2">
         <rdf:type rdf:resource="&untitled-ontology-24;Velo"/>
-        <untitled-ontology-24:CapacitéMax rdf:datatype="&xsd;integer">1</untitled-ontology-24:CapacitéMax>
+        <untitled-ontology-24:CapaciteMax rdf:datatype="&xsd;integer">1</untitled-ontology-24:CapaciteMax>
         <untitled-ontology-24:Id rdf:datatype="&xsd;integer">2</untitled-ontology-24:Id>
         <untitled-ontology-24:Couleur rdf:datatype="&xsd;string">Bleu</untitled-ontology-24:Couleur>
-        <untitled-ontology-24:NomVelo rdf:datatype="&xsd;string">Vélo de Course</untitled-ontology-24:NomVelo>
+        <untitled-ontology-24:NomVelo rdf:datatype="&xsd;string">Velo de Course</untitled-ontology-24:NomVelo>
     </NamedIndividual>
 
 

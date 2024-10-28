@@ -27,7 +27,8 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            String fusekiEndpoint = "http://localhost:3030/agri"; // Change this URL to your Fuseki endpoint
+            String fusekiEndpoint = "http://localhost:3030/projet"; // Change this URL to your Fuseki endpoint
+
 
             HttpServer server = HttpServer.create(new InetSocketAddress(9000), 0);
             server.createContext("/admins", new AdminHandler(fusekiEndpoint));
