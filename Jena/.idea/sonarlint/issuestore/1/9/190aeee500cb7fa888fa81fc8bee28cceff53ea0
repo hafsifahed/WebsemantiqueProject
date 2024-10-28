@@ -1,0 +1,16 @@
+
+_
+java:S11923"IDefine a constant instead of duplicating this literal "WHERE { " 3 times.(ò­Ÿ
+d
+java:S1192¢"MDefine a constant instead of duplicating this literal "Content-Type" 3 times.(ÊÂÃ
+¤
+java:S1192m"Define a constant instead of duplicating this literal "<http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-9#Expert" 5 times.(×¢ÂY
+¬
+java:S11921"•Define a constant instead of duplicating this literal "PREFIX ns: <http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-9#> " 4 times.(ı´äÕ
+\
+java:S1192Q"FDefine a constant instead of duplicating this literal "\" . " 4 times.(ÿ›Ûˆ
+l
+java:S1192P"QDefine a constant instead of duplicating this literal "> a ns:Expert . " 3 times.(¦—Ñ®ÿÿÿÿÿ
+E	java:S106}"+Replace this use of System.out by a logger.(¢Ó¼èøÿÿÿÿ
+I
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ

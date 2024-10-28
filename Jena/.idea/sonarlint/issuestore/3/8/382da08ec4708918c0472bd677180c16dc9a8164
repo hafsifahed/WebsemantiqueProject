@@ -1,0 +1,46 @@
+
+J
+java:S3740;"/Provide the parametrized type for this generic.(É…Úøÿÿÿÿ
+f
+java:S1192"KDefine a constant instead of duplicating this literal " not found" 3 times.(±¦ó¨ûÿÿÿÿ
+q
+java:S1488@"[Immediately return this expression instead of assigning it to the temporary variable "inf".(ÂÜ–÷
+g
+java:S2095M"LUse try-with-resources or close this "QueryExecution" in a "finally" clause.(îÊŸ›üÿÿÿÿ
+_
+java:S2583"DChange this condition so that it does not always evaluate to "false"(Ñ‹İ¶ÿÿÿÿÿ
+_
+java:S2583g"DChange this condition so that it does not always evaluate to "false"(Ñ‹İ¶ÿÿÿÿÿ
+_
+java:S25830"DChange this condition so that it does not always evaluate to "false"(Ñ‹İ¶ÿÿÿÿÿ
+i
+java:S3008"NRename this field "RDF" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õß«Õıÿÿÿÿ
+P
+java:S1118":Add a private constructor to hide the implicit public one.(Íò¸ô
+`
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(õß«Õıÿÿÿÿ
+[
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ôı¥‚
+A
+java:S1874"+Remove this use of "get"; it is deprecated.(¸¡éˆ
+E	java:S106"+Replace this use of System.out by a logger.(±¦ó¨ûÿÿÿÿ
+M
+java:S1135""2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ
+[
+java:S1124-"EReorder the modifiers to comply with the Java Language Specification.(ôäæ
+A
+java:S1874/"+Remove this use of "get"; it is deprecated.(¡¶üµ
+@	java:S1061"+Replace this use of System.out by a logger.(Î¹Ñù
+M
+java:S11357"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ
+`
+java:S1124I"EReorder the modifiers to comply with the Java Language Specification.(™°Ïâúÿÿÿÿ
+[
+java:S1124c"EReorder the modifiers to comply with the Java Language Specification.(«¹©
+F
+java:S1874f"+Remove this use of "get"; it is deprecated.(üİÇœûÿÿÿÿ
+@	java:S106h"+Replace this use of System.out by a logger.(©åëã
+M
+java:S1135n"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ
+B
+java:S1068"'Remove this unused "RDF" private field.(õß«Õıÿÿÿÿ

@@ -1,0 +1,16 @@
+
+”
+java:S1192M"SDefine a constant instead of duplicating this literal "> a ns:Tutorial . " 3 times.(Çã…ÒùÿÿÿÿJ$492cd872-b8ab-4d20-8932-6110cee22960
+…
+java:S11923"IDefine a constant instead of duplicating this literal "WHERE { " 3 times.(ò­ŸJ$6b34e287-39c3-4ebe-9176-5067622c5e99
+Š
+java:S1192™"MDefine a constant instead of duplicating this literal "Content-Type" 3 times.(ÊÂÃJ$553dc613-486a-4a08-83f5-b5f4f555cf8d
+Í
+java:S1192g"Define a constant instead of duplicating this literal "<http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-9#Tutorial" 5 times.(Ğ¸ÇØJ$b7c9bfa0-b909-41c6-9c07-1555e087fa27
+Ò
+java:S11921"•Define a constant instead of duplicating this literal "PREFIX ns: <http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-9#> " 4 times.(ı´äÕJ$32477d76-2b1e-4f65-8586-0ffd7cfdd215
+‡
+java:S1192N"FDefine a constant instead of duplicating this literal "\" . " 3 times.(ÃÚ–„üÿÿÿÿJ$6ba00d7a-bde8-49fd-a20b-3c9f14640f9a
+k	java:S106t"+Replace this use of System.out by a logger.(¢Ó¼èøÿÿÿÿJ$90526658-d0e5-496f-92c6-21e7a3fed930
+o
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿJ$2d5a676e-f6ea-465e-b3ed-520ba1530796

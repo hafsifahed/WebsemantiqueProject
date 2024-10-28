@@ -1,44 +1,58 @@
 package esprit.application;
-import esprit.tools.JenaEngine;
-import org.apache.jena.rdf.model.*;
-import org.apache.jena.update.UpdateAction;
-import org.apache.jena.update.UpdateFactory;
-import org.apache.jena.update.UpdateRequest;
+
+import esprit.tools.AdminHandler;
+import esprit.tools.BusHandler;
+import esprit.tools.ClientHandler;
+import esprit.tools.CovoitureurHandler;
+import esprit.tools.EconomiesDEnergieHandler;
+import esprit.tools.EmissionsDeCO2Handler;
+import esprit.tools.MetroHandler;
+import esprit.tools.RapportImpactEcologiqueHandler;
+import esprit.tools.RapportTrajetHandler;
+import esprit.tools.ReductionDePollutionHandler;
+import esprit.tools.StationDeBusHandler;
+import esprit.tools.StationDeMetroHandler;
+import esprit.tools.StationTramwayHandler;
+import esprit.tools.TrajetLongueDistanceHandler;
+import esprit.tools.TrajetPartageHandler;
+import esprit.tools.VeloHandler;
+import esprit.tools.VoiturePersonnelleHandler;
+
+import com.sun.net.httpserver.HttpServer;
+
+import java.io.IOException;
+import java.net.InetSocketAddress;
 
 public class Main {
+
     public static void main(String[] args) {
-        String NS = "";
-        // Read the model from an ontology
-        Model model = JenaEngine.readModel("data/projet.owl");
-        if (model != null) {
-            NS = model.getNsPrefixURI("");
+        try {
+            String fusekiEndpoint = "http://localhost:3030/agri"; // Change this URL to your Fuseki endpoint
 
-            // Apply inference rules
-            Model inferredModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
+            HttpServer server = HttpServer.create(new InetSocketAddress(9000), 0);
+            server.createContext("/admins", new AdminHandler(fusekiEndpoint));
+            server.createContext("/buses", new BusHandler(fusekiEndpoint));
+            server.createContext("/clients", new ClientHandler(fusekiEndpoint));
+            server.createContext("/covoitureurs", new CovoitureurHandler(fusekiEndpoint));
+            server.createContext("/economies", new EconomiesDEnergieHandler(fusekiEndpoint));
+            server.createContext("/emissions", new EmissionsDeCO2Handler(fusekiEndpoint));
+            server.createContext("/metros", new MetroHandler(fusekiEndpoint));
+            server.createContext("/rapports/impact-ecologique", new RapportImpactEcologiqueHandler(fusekiEndpoint));
+            server.createContext("/rapports/trajet", new RapportTrajetHandler(fusekiEndpoint));
+            server.createContext("/reductions/pollution", new ReductionDePollutionHandler(fusekiEndpoint));
+            server.createContext("/stations/bus", new StationDeBusHandler(fusekiEndpoint));
+            server.createContext("/stations/metro", new StationDeMetroHandler(fusekiEndpoint));
+            server.createContext("/stations/tramway", new StationTramwayHandler(fusekiEndpoint));
+            server.createContext("/trajets/longue-distance", new TrajetLongueDistanceHandler(fusekiEndpoint));
+            server.createContext("/trajets/partage", new TrajetPartageHandler(fusekiEndpoint));
+            server.createContext("/velos", new VeloHandler(fusekiEndpoint));
+            server.createContext("/voitures-personnelles", new VoiturePersonnelleHandler(fusekiEndpoint));
 
-            // Execute queries (SELECT)
-            System.out.println(JenaEngine.executeQueryFile(inferredModel, "data/query.txt"));
-            System.out.println(JenaEngine.executeQueryFile(inferredModel, "data/queryadminemail.txt"));
-
-
-            // Insertion example using Update API
-            String insertQuery = "PREFIX ns: <http://www.semanticweb.org/hafsi/ontologies/2024/9/untitled-ontology-24#> "
-                    + "INSERT DATA { "
-                    + "ns:admin3 a ns:Admin ; "
-                    + "ns:Id 3 ; "
-                    + "ns:nom \"Alice Dupont\" ; "
-                    + "ns:email \"alice.dupont@example.com\" . "
-                    + "}";
-
-            // Create an update request and execute it
-            UpdateRequest updateRequest = UpdateFactory.create(insertQuery);
-            UpdateAction.execute(updateRequest, inferredModel);
-
-            // Verify insertion by querying
-            System.out.println(JenaEngine.executeQueryFile(inferredModel, "data/querytrotinette.txt"));
-
-        } else {
-            System.out.println("Error when reading model from ontology");
+            server.setExecutor(null); // Use the default executor
+            server.start();
+            System.out.println("Server is running on port 9000");
+        } catch (IOException e) {
+            System.err.println("Error starting server: " + e.getMessage());
         }
     }
 }
