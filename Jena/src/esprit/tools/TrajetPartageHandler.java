@@ -47,14 +47,14 @@ public class TrajetPartageHandler implements HttpHandler {
     // GET method to retrieve shared trips
     private void handleGet(HttpExchange exchange) throws IOException {
         String queryString = "PREFIX ns: <" + ONTOLOGY_NAMESPACE + "> " +
-                "SELECT ?trajet ?id ?pointDeDepart ?pointDArrivee ?heureDeDepart ?heureDArrivee ?distanceEnKm ?description ?covoitureurId " +
+                "SELECT ?trajet ?id ?pointDeDepart  ?heureDeDepart  ?distanceEnKm ?description ?covoitureurId " +
                 "WHERE { " +
                 "?trajet a ns:TrajetPartage ; " +
                 "ns:Id ?id ; " +
-                "ns:PointDeDépart ?pointDeDepart ; " +
-                "ns:PointD'Arrivée ?pointDArrivee ; " +
-                "ns:HeureDeDépart ?heureDeDepart ; " +
-                "ns:HeureD'Arrivée ?heureDArrivee ; " +
+                "ns:PointDeDepart ?pointDeDepart ; " +
+                //"ns:PointDArrivee ?pointDArrivee ; " +
+                "ns:HeureDeDepart ?heureDeDepart ; " +
+               // "ns:HeureDArrivee ?heureDArrivee ; " +
                 "ns:DistanceEnKm ?distanceEnKm ; " +
                 "ns:Description ?description ; " +
                 "ns:aCovoitureur ?covoitureurId ." +
@@ -72,9 +72,9 @@ public class TrajetPartageHandler implements HttpHandler {
 
         String id = jsonObject.get("id").getAsString().trim();
         String pointDeDepart = jsonObject.get("pointDeDepart").getAsString().trim();
-        String pointDArrivee = jsonObject.get("pointDArrivee").getAsString().trim();
+       // String pointDArrivee = jsonObject.get("pointDArrivee").getAsString().trim();
         String heureDeDepart = jsonObject.get("heureDeDepart").getAsString().trim();
-        String heureDArrivee = jsonObject.get("heureDArrivee").getAsString().trim();
+       // String heureDArrivee = jsonObject.get("heureDArrivee").getAsString().trim();
         double distanceEnKm = jsonObject.get("distanceEnKm").getAsDouble();
         String description = jsonObject.get("description").getAsString().trim();
         String covoitureurId = jsonObject.get("covoitureurId").getAsString().trim();
@@ -83,10 +83,10 @@ public class TrajetPartageHandler implements HttpHandler {
                 "INSERT DATA { " +
                 "<" + ONTOLOGY_NAMESPACE + "TrajetPartage" + id + "> a ns:TrajetPartage . " +
                 "<" + ONTOLOGY_NAMESPACE + "TrajetPartage" + id + "> ns:Id \"" + id + "\" . " +
-                "<" + ONTOLOGY_NAMESPACE + "TrajetPartage" + id + "> ns:PointDeDépart \"" + pointDeDepart + "\" . " +
-                "<" + ONTOLOGY_NAMESPACE + "TrajetPartage" + id + "> ns:PointD'Arrivée \"" + pointDArrivee + "\" . " +
-                "<" + ONTOLOGY_NAMESPACE + "TrajetPartage" + id + "> ns:HeureDeDépart \"" + heureDeDepart + "\" . " +
-                "<" + ONTOLOGY_NAMESPACE + "TrajetPartage" + id + "> ns:HeureD'Arrivée \"" + heureDArrivee + "\" . " +
+                "<" + ONTOLOGY_NAMESPACE + "TrajetPartage" + id + "> ns:PointDeDepart \"" + pointDeDepart + "\" . " +
+               // "<" + ONTOLOGY_NAMESPACE + "TrajetPartage" + id + "> ns:PointD'Arrivee \"" + pointDArrivee + "\" . " +
+                "<" + ONTOLOGY_NAMESPACE + "TrajetPartage" + id + "> ns:HeureDeDepart \"" + heureDeDepart + "\" . " +
+               // "<" + ONTOLOGY_NAMESPACE + "TrajetPartage" + id + "> ns:HeureD'Arrivee \"" + heureDArrivee + "\" . " +
                 "<" + ONTOLOGY_NAMESPACE + "TrajetPartage" + id + "> ns:DistanceEnKm \"" + distanceEnKm + "\" . " +
                 "<" + ONTOLOGY_NAMESPACE + "TrajetPartage" + id + "> ns:Description \"" + description + "\" . " +
                 "<" + ONTOLOGY_NAMESPACE + "TrajetPartage" + id + "> ns:aCovoitureur \""+ covoitureurId +"\" . }";
@@ -107,9 +107,9 @@ public class TrajetPartageHandler implements HttpHandler {
 
         String id = jsonObject.get("id").getAsString().trim();
         String pointDeDepart = jsonObject.get("pointDeDepart").getAsString().trim();
-        String pointDArrivee = jsonObject.get("pointDArrivee").getAsString().trim();
+       // String pointDArrivee = jsonObject.get("pointDArrivee").getAsString().trim();
         String heureDeDepart = jsonObject.get("heureDeDepart").getAsString().trim();
-        String heureDArrivee = jsonObject.get("heureDArrivee").getAsString().trim();
+      //  String heureDArrivee = jsonObject.get("heureDArrivee").getAsString().trim();
         double distanceEnKm = jsonObject.get("distanceEnKm").getAsDouble();
         String description = jsonObject.get("description").getAsString().trim();
         String covoitureurId = jsonObject.get("covoitureurId").getAsString().trim();
@@ -120,10 +120,10 @@ public class TrajetPartageHandler implements HttpHandler {
                 +" "+ ONTOLOGY_NAMESPACE
                 +"TrajetPartage"
                 +" "+id
-                +" > ns:PointDeDépart ?pointDeDepart; "
-                +"ns:PointD'Arrivée ?pointDArrivee; "
-                +"ns:HeureDeDépart ?heureDeDepart; "
-                +"ns:HeureD'Arrivée ?heureDArrivee; "
+                +" > ns:PointDeDepart ?pointDeDepart; "
+              //  +"ns:PointD'Arrivee ?pointDArrivee; "
+                +"ns:HeureDeDepart ?heureDeDepart; "
+               // +"ns:HeureD'Arrivee ?heureDArrivee; "
                 +"ns:DistanceEnKm ?distanceEnKm; "
                 +"ns:Description ?description; "
                 +"ns:aCovoitureur ?covoitureurId. } "
@@ -132,14 +132,14 @@ public class TrajetPartageHandler implements HttpHandler {
                 +" "+ ONTOLOGY_NAMESPACE
                 +"TrajetPartage"
                 +" "+id
-                +" > ns:PointDeDépart \""
+                +" > ns:PointDeDepart \""
                 +" "+pointDeDepart
-                +"\"; ns:PointD'Arrivée \""
-                +" "+pointDArrivee
-                +"\"; ns:HeureDeDépart \""
+                +"\"; ns:PointD'Arrivee \""
+              //  +" "+pointDArrivee
+                +"\"; ns:HeureDeDepart \""
                 +" "+heureDeDepart
-                +"\"; ns:HeureD'Arrivée \""
-                +" "+heureDArrivee
+                +"\"; ns:HeureD'Arrivee \""
+               // +" "+heureDArrivee
                 +"\"; ns:DistanceEnKm \""
                 +" "+distanceEnKm
                 +"\"; ns:Description \""
@@ -152,7 +152,7 @@ public class TrajetPartageHandler implements HttpHandler {
                 +" "+ ONTOLOGY_NAMESPACE
                 +"TrajetPartage"
                 +" "+id
-                +" > ns:PointDeDépart ?pointDeDepart; }";
+                +" > ns:PointDeDepart ?pointDeDepart; }";
 
         try {
             executeUpdate(updateQuery);

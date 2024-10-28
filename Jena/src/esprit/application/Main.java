@@ -38,14 +38,14 @@ public class Main {
             server.createContext("/economies", new EconomiesDEnergieHandler(fusekiEndpoint));
             server.createContext("/emissions", new EmissionsDeCO2Handler(fusekiEndpoint));
             server.createContext("/metros", new MetroHandler(fusekiEndpoint));
-            server.createContext("/rapports/impact-ecologique", new RapportImpactEcologiqueHandler(fusekiEndpoint));
-            server.createContext("/rapports/trajet", new RapportTrajetHandler(fusekiEndpoint));
-            server.createContext("/reductions/pollution", new ReductionDePollutionHandler(fusekiEndpoint));
-            server.createContext("/stations/bus", new StationDeBusHandler(fusekiEndpoint));
-            server.createContext("/stations/metro", new StationDeMetroHandler(fusekiEndpoint));
-            server.createContext("/stations/tramway", new StationTramwayHandler(fusekiEndpoint));
-            server.createContext("/trajets/longue-distance", new TrajetLongueDistanceHandler(fusekiEndpoint));
-            server.createContext("/trajets/partage", new TrajetPartageHandler(fusekiEndpoint));
+            server.createContext("/rapports-impact-ecologique", new RapportImpactEcologiqueHandler(fusekiEndpoint));
+            server.createContext("/rapports-trajet", new RapportTrajetHandler(fusekiEndpoint));
+            server.createContext("/reductions-pollution", new ReductionDePollutionHandler(fusekiEndpoint));
+            server.createContext("/stations-bus", new StationDeBusHandler(fusekiEndpoint));
+            server.createContext("/stations-metro", new StationDeMetroHandler(fusekiEndpoint));
+            server.createContext("/stations-tramway", new StationTramwayHandler(fusekiEndpoint));
+            server.createContext("/trajets-longue-distance", new TrajetLongueDistanceHandler(fusekiEndpoint));
+            server.createContext("/trajets-partage", new TrajetPartageHandler(fusekiEndpoint));
             server.createContext("/velos", new VeloHandler(fusekiEndpoint));
             server.createContext("/voitures-personnelles", new VoiturePersonnelleHandler(fusekiEndpoint));
 

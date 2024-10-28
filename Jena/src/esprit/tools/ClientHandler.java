@@ -79,12 +79,11 @@ public class ClientHandler implements HttpHandler {
         String id = jsonObject.get("id").getAsString().trim();
         String nom = jsonObject.get("nom").getAsString().trim();
         String prenom = jsonObject.get("prenom").getAsString().trim();
-        String motDePasse = jsonObject.get("motDePasse").getAsString().trim(); // Assuming motDePasse is needed
         String numeroDeTelephone = jsonObject.get("numeroDeTelephone").getAsString().trim();
         String adresse = jsonObject.get("adresse").getAsString().trim();
         String dateDeNaissance = jsonObject.get("dateDeNaissance").getAsString().trim();
         String email = jsonObject.get("email").getAsString().trim();
-        String aPreferenceTransport = jsonObject.get("aPreferenceTransport").getAsString().trim(); // Assuming this is included
+      //  String aPreferenceTransport = jsonObject.get("aPreferenceTransport").getAsString().trim(); // Assuming this is included
 
         String insertQuery = "PREFIX ns: <" + ONTOLOGY_NAMESPACE + "> " +
                 "INSERT DATA { " +
@@ -96,7 +95,6 @@ public class ClientHandler implements HttpHandler {
                 "<" + ONTOLOGY_NAMESPACE + "Client" + id + "> ns:Adresse \"" + adresse + "\" . " +
                 "<" + ONTOLOGY_NAMESPACE + "Client" + id + "> ns:DateDeNaissance \"" + dateDeNaissance + "\" . " +
                 "<" + ONTOLOGY_NAMESPACE + "Client" + id + "> ns:email \"" + email + "\" . " +
-                "<" + ONTOLOGY_NAMESPACE + "Client" + id + "> ns:aPreferenceTransport <" + ONTOLOGY_NAMESPACE + aPreferenceTransport + "> . " +
                 "}";
 
         try {

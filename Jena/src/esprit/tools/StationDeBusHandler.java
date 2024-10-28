@@ -53,10 +53,10 @@ public class StationDeBusHandler implements HttpHandler {
                 "ns:Id ?id ; " +
                 "ns:NomStation ?nomStation ; " +
                 "ns:AdresseStation ?adresse ; " +
-                "ns:NuméroDeTéléphone ?numeroDeTelephone ; " +
+                "ns:NumeroDeTelephone ?numeroDeTelephone ; " +
                 "ns:HorairesOuverture ?horairesOuverture ; " +
                 "ns:HorairesFermeture ?horairesFermeture ; " +
-                "ns:CapacitéMax ?capaciteMax ." +
+                "ns:CapaciteMax ?capaciteMax ." +
                 "}";
 
         String result = executeSparqlQuery(queryString);
@@ -83,10 +83,10 @@ public class StationDeBusHandler implements HttpHandler {
                 "<" + ONTOLOGY_NAMESPACE + "StationTransport" + id + "> ns:Id \"" + id + "\" . " +
                 "<" + ONTOLOGY_NAMESPACE + "StationTransport" + id + "> ns:NomStation \"" + nomStation + "\" . " +
                 "<" + ONTOLOGY_NAMESPACE + "StationTransport" + id + "> ns:AdresseStation \"" + adresse + "\" . " +
-                "<" + ONTOLOGY_NAMESPACE + "StationTransport" + id + "> ns:NuméroDeTéléphone \"" + numeroDeTelephone + "\" . " +
+                "<" + ONTOLOGY_NAMESPACE + "StationTransport" + id + "> ns:NumeroDeTelephone \"" + numeroDeTelephone + "\" . " +
                 "<" + ONTOLOGY_NAMESPACE + "StationTransport" + id + "> ns:HorairesOuverture \"" + horairesOuverture + "\" . " +
                 "<" + ONTOLOGY_NAMESPACE + "StationTransport" + id + "> ns:HorairesFermeture \"" + horairesFermeture + "\" . " +
-                "<" + ONTOLOGY_NAMESPACE + "StationTransport" + id + "> ns:CapacitéMax \"" + capaciteMax + "\" . }";
+                "<" + ONTOLOGY_NAMESPACE + "StationTransport" + id + "> ns:CapaciteMax \"" + capaciteMax + "\" . }";
 
         try {
             executeUpdate(insertQuery);
@@ -118,10 +118,10 @@ public class StationDeBusHandler implements HttpHandler {
                 +" "+id
                 +" > ns:NomStation ?nomStation; "
                 +"ns:AdresseStation ?adresse; "
-                +"ns:NuméroDeTéléphone ?numeroDeTelephone; "
+                +"ns:NumeroDeTelephone ?numeroDeTelephone; "
                 +"ns:HorairesOuverture ?horairesOuverture; "
                 +"ns:HorairesFermeture ?horairesFermeture; "
-                +"ns:CapacitéMax ?capaciteMax. } "
+                +"ns:CapaciteMax ?capaciteMax. } "
                 +"INSERT { "
                 +"<"
                 +" "+ ONTOLOGY_NAMESPACE
@@ -131,13 +131,13 @@ public class StationDeBusHandler implements HttpHandler {
                 +" "+nomStation
                 +"\"; ns:AdresseStation \""
                 +" "+adresse
-                +"\"; ns:NuméroDeTéléphone \""
+                +"\"; ns:NumeroDeTelephone \""
                 +" "+numeroDeTelephone
                 +"\"; ns:HorairesOuverture \""
                 +" "+horairesOuverture
                 +"\"; ns:HorairesFermeture \""
                 +" "+horairesFermeture
-                +"\"; ns:CapacitéMax \""
+                +"\"; ns:CapaciteMax \""
                 +" "+capaciteMax
                 +"\". } "
                 +"WHERE { "
